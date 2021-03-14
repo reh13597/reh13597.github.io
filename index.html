@@ -1,0 +1,194 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Alex Guo's Website</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="icon" href="./assets/blah.png">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link href="album.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c7fae8d41a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="bg-dark collapse" id="navbarHeader" style="">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Alex Guo</h4>
+              <p class="text-muted">What's up! As of making this website, I am in grade 10 at Semiahmoo Secondary. I currently like playing video games, watching anime, and swimming. As time goes on, this information will change accordingly.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact me</h4>
+              <!-- // Make this into a flex parent, each LI underneath will become a flex-child, and then just set -->
+              <ul class="list-unstyled flex-parent">
+                <li><a href="https://www.instagram.com/alex_gurr_888/" target= "_blank" class="text-white"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alex-gurr-gaming-3088461ba" target= "_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCskD7FKV6LWzvruGqpZd6Kg" target= "_blank" class="text-white"><i class="fab fa-youtube fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Alex Guo's Website</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Welcome to my website!</h1>
+        <p class="lead text-muted">Hello, as you may already know, I am Alex Guo. I am the creator of this wesbite, and on it, there will be information about me, my experience, and my projects and achievements. The page you're currently on is the home page of my website. It has information about me and what I enjoy. Please take a look around!</p>
+        <p>
+          <a href="./index.html" class="btn btn-secondary my-2">Home page</a>
+          <a href="./experience.html" class="btn btn-secondary my-2">Experience</a>
+          <a href="./projects-achievements.html" class="btn btn-secondary my-2">Projects and Achievements</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img id="bruh" src="./assets/swim.jpeg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">This is a picture of me and my swim team, PSW, enroute to Victoria for a provincial swim race. I've been swimming for almost all my life and I really enjoy it. I also like all the friends and relationships I've made with swimming. This sport is very meaningful to me.</p>
+                <p>Picture taken on 01/04/2020</p>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button id="myButton" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <div id="myModal" class="modal">
+                      <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img id="bruh" src="./assets/swim.jpeg" class="modal-content">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="./assets/atl.jpeg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">Me and my friend Edwin, at the NCR HQ in Atlanta, Georgia. NCR is a software and technology company that makes a majority of the ATMs and kiosks that you use. Edwin works at NCR as an infrastructure engineer, cloud architect, and a software dev.</p>
+                <p>Picture taken on 08/20/2019</p>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="./assets/me.jpeg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">Here's a picture of me in my school during COVID-19, at 15 years old. I was in english class at the time of this photo, and I was on my phone because I finished all my work. The highschool in which I am situated in, in the photo, is Semiahmoo Secondary.</p>
+                <p>Picture taken on 02/25/2021</p>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="./assets/fireforce.jpg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">This is one of my most favourite anime that I've ever watched, Fire Force. Although I have watched countless animes, Fire Force stands out to me and is among my top 10 animes. This anime is about a world that has firefighters with supernatural abilities, and they deal with crime related to a dangerous fictional phenomenon.</p>
+                <a href="https://myanimelist.net/anime/38671/Enen_no_Shouboutai" target= "_blank" class="clickable">Click here for more information</a>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="./assets/popeyes.jpg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">Here is my most absolute favourite food, a Popeyes chicken sandwich. Even though it's sort of pricy, I will always dish out my money to buy this sandwich, because I just love it that much. The soft buns, smotherd in delicious sauces, clamping together a crispy and tender piece of fried chicken and some pickles, the bliss this food brings me is beyond my imagination.</p>
+                <a href="https://www.popeyeschicken.ca/" target= "_blank" class="clickable">Click here for more information</a>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="./assets/minecraft.jpg" alt="HELLO" height=auto width=auto>
+              <div class="card-body">
+                <p class="card-text">This is my all-time favourite game, Minecraft. Minecraft is a sandbox type video game where you can play around with tons of things. It comes with its own game features, but what makes Minecraft really interesting, is that anyone can customize the game to their preference, by tweaking the game with Java.</p>
+                <a href="https://www.minecraft.net/" target= "_blank" class="clickable">Click here for more information</a>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </main>
+
+    <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+        </p>
+      <p>Hey there! Interested in my website? Please feel free to download and customize it for yourself!</p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+
+</body></html>
