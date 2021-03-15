@@ -6,16 +6,11 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Alex Guo's Website</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="icon" href="./assets/blah.png">
-
     <link rel="stylesheet" href="./styles.css">
-
     <link href="album.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/c7fae8d41a.js" crossorigin="anonymous"></script>
   </head>
 
@@ -33,9 +28,9 @@
               <h4 class="text-white">Contact me</h4>
               <!-- // Make this into a flex parent, each LI underneath will become a flex-child, and then just set -->
               <ul class="list-unstyled flex-parent">
-                <li><a href="https://www.instagram.com/alex_gurr_888/" target= "_blank" class="text-white"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li id="leading-icon"><a href="https://www.instagram.com/alex_gurr_888/" target= "_blank" class="text-white"><i class="fab fa-instagram fa-2x"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/alex-gurr-gaming-3088461ba" target= "_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCskD7FKV6LWzvruGqpZd6Kg" target= "_blank" class="text-white"><i class="fab fa-youtube fa-2x"></i></a></li>
+                <li><a href="https://github.com/reh13597" target= "_blank" class="text-white"><i class="fab fa-github fa-2x"></i></a></li>
               </ul>
             </div>
           </div>
@@ -95,14 +90,20 @@
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
-                <img src="./assets/atl.jpeg" alt="HELLO" height=auto width=auto>
+                <img id="bruh" src="./assets/atl.jpeg" alt="HELLO" height=auto width=auto>
               <div class="card-body">
                 <p class="card-text">Me and my friend Edwin, at the NCR HQ in Atlanta, Georgia. NCR is a software and technology company that makes a majority of the ATMs and kiosks that you use. Edwin works at NCR as an infrastructure engineer, cloud architect, and a software dev.</p>
                 <p>Picture taken on 08/20/2019</p>
                 <hr>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button id="myButton" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <div id="myModal" class="modal">
+                      <!-- The Close Button -->
+                      <span class="close">&times;</span>
+                      <!-- Modal Content (The Image) -->
+                      <img id="bruh" src="./assets/atl.jpeg" class="modal-content">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,7 +185,7 @@
       <p class="float-right">
         <a href="#">Back to top</a>
         </p>
-      <p>Hey there! Interested in my website? Please feel free to download and customize it for yourself!</p>
+      <p>Hey there! Interested in my website? Please feel free to contact me and I can give you the template!</p>
     </div>
     </footer>
 
