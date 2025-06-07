@@ -1,5 +1,7 @@
 export default function Coding() {
     return(
-        <h1 className="text-primary">Coding Page</h1>
+        <div className="text-center">
+            <h1 className="text-7xl text-primary mt-50">Coding Page</h1>
+        </div>
     );
 }
