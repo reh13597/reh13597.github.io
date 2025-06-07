@@ -1,14 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@plugin "daisyui";
 
+/* @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "forest";
   default: true;
   prefersdark: false;
   color-scheme: "dark";
-
   --color-base-100: oklch(20.84% 0.008 17.911);
   --color-base-200: oklch(18.522% 0.007 17.911);
   --color-base-300: oklch(16.203% 0.007 17.911);
@@ -38,24 +37,19 @@
   --depth: 0;
   --noise: 0;
 }
-
-
-:root {
+ */
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -108,3 +102,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+ */
