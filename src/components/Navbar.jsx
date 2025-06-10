@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom';
-import instagramIcon from '../assets/instagram.svg';
-import facebookIcon from '../assets/facebook.svg';
-import githubIcon from '../assets/github.svg';
-import linkedinIcon from '../assets/linkedin.svg';
+import instagramIcon from '../assets/icons/instagram.svg';
+import facebookIcon from '../assets/icons/facebook.svg';
+import githubIcon from '../assets/icons/github.svg';
+import linkedinIcon from '../assets/icons/linkedin.svg';
 
 export default function Navbar() {
     const location = useLocation();
@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="navbar bg-base-300 shadow-sm">
             <div className="navbar-start">
                 <div className="flex-1">
-                    <a href="/" className="btn btn-primary btn-ghost text-2xl">Alex Guo</a>
+                    <a href="/" className="btn btn-primary btn-ghost text-2xl transition duration-300 ease-in-out">Alex Guo</a>
                 </div>
             </div>
             <div className="navbar-center">
