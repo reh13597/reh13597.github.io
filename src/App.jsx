@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/reh13597.github.io/">
       <Navbar />
       <Routes>
         <Route exact path ="/" element={<Home />} />
