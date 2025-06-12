@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
-  return (
+  return ( 
     <BrowserRouter basename="/reh13597.github.io/">
       <Navbar />
       <Routes>
