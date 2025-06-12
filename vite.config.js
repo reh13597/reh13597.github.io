@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/reh13597.github.io/', 
   plugins: [tailwindcss(), react()],
-})
+});
 

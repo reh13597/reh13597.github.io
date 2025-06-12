@@ -7,7 +7,6 @@ import './App.css';
 
 function App() {
   return (
-
     <BrowserRouter basename="/reh13597.github.io/">
       <Navbar />
       <Routes>
