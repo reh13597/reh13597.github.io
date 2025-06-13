@@ -6,3 +6,5 @@ export default function Home() {
     );
 }
 
+// WRITE OUT MY BIOGRAPHY FIRST
+// CURRENTLY ON NEW BIO BRANCH
