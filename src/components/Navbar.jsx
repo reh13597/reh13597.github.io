@@ -11,11 +11,11 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setIsVisible(true), 500)
+        setTimeout(() => setIsVisible(true), 300)
     }, [])
 
     return(
-        <div className={`navbar bg-base-300 shadow-sm transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-5'}`}>
+        <div className={`navbar bg-base-300 shadow-sm transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-5'}`}>
             <div className="navbar-start">
                 <div className="flex-1">
                     <Link to="/" className="btn btn-primary btn-ghost text-2xl transition duration-300 hover:scale-110">Alex Guo</Link>
