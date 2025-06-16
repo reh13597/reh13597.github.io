@@ -6,7 +6,7 @@
   default: true;
   prefersdark: false;
   color-scheme: "dark";
-  --color-base-100: oklch(25.84% 0.008 17.911);
+  --color-base-100: oklch(27.84% 0.008 17.911);
   --color-base-200: oklch(23.522% 0.007 17.911);
   --color-base-300: oklch(20.203% 0.007 17.911);
   --color-base-content: oklch(98% 0.003 247.858);
@@ -34,6 +34,10 @@
   --border: 1px;
   --depth: 0;
   --noise: 0;
+}
+
+:root {
+  background-color: var(--color-base-200);
 }
 
 /* :root {

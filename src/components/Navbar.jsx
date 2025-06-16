@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className={`navbar bg-base-300 shadow-sm transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-5'}`}>
             <div className="navbar-start">
                 <div className="flex flex-1">
-                    <Link to="/" className="btn btn-ghost btn-primary text-2xl text-base-content transition duration-300 hover:scale-110">Alex Guo</Link>
+                    <Link to="/" className="btn btn-ghost btn-primary text-2xl transition duration-300 hover:scale-110">Alex Guo</Link>
                 </div>
             </div>
             <div className="navbar-center">

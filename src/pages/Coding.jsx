@@ -1,13 +1,20 @@
+import { useEffect, useState } from 'react';
 import SkillCard from '../components/SkillCard';
 import ProjectCard from '../components/ProjectCard';
 import Descent from '../assets/images/descent.JPG';
 import ServerNexus from '../assets/images/servernexus.JPG';
 
 export default function Coding() {
-   return(
+    const [isVisible, setIsVisible] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => setIsVisible(true), 300)
+    })
+
+    return(
         <div className="grid grid-rows-2">
-            <div className="bg-base-300 rounded-2xl p-6 shadow-lg h-80 w-280 mx-auto mt-8">
-                <h1 className="flex justify-center text-4xl font-semibold">Skills</h1>
+            <div className={`bg-base-300 rounded-2xl p-6 shadow-lg h-80 w-280 mx-auto mt-8 transition duration-300 hover:scale-110 ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-10'}`}>
+                <h1 className="flex justify-center text-4xl font-semibold transition duration-300 hover:scale-130">Skills</h1>
                 <div className="grid grid-cols-3 gap-5 mt-5">
                     <div className="flex justify-center">
                         <SkillCard title={'Languages'} items={['Java', 'JavaScript', 'TypeScript', 'HTML', 'Python', 'C/C++', 'C#', 'Lua']} />
@@ -20,8 +27,8 @@ export default function Coding() {
                     </div>
                 </div>
             </div>
-            <div className="bg-base-300 rounded-2xl p-6 shadow-lg h-110 w-430 mx-auto -mt-7">
-                <h1 className="flex justify-center text-4xl font-semibold">Projects</h1>
+            <div className={`bg-base-300 rounded-2xl p-6 shadow-lg h-110 w-430 mx-auto -mt-7 transition duration-300 hover:scale-105 ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-5'}`}>
+                <h1 className="flex justify-center text-4xl font-semibold transition duration-300 hover:scale-130">Projects</h1>
                 <div className="grid grid-cols-2 gap-3 mt-5">
                     <div className="flex justify-center">
                         <ProjectCard
