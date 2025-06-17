@@ -10,12 +10,12 @@ export default function Home() {
     }, [])
 
     return(
-        <div className={`bg-base-300 rounded-4xl p-10 shadow-lg w-[90%] m-auto mt-20 transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-10'} `}>
+        <div className={`bg-base-300 rounded-4xl p-10 shadow-lg w-[90%] m-auto mt-10 transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-10'} `}>
             <div className="grid grid-cols-3 gap-5">
                 <div className={`flex justify-center mt-1 transition ${isVisible ? 'opacity-100 translate-y-0 delay-1100' : 'opacity-0 translate-y-30'}`}>
                     <img
                         src={pic1}
-                        alt="Picture of Alex Guo smiling and eyes wide open, with hands up and fingers forming a picture frame. He is wearing a navy blue jacket with floral designs on top of a white background, located near the top of the jacket. He is also wearing a navy blue shirt underneath the jacket. There is a dark background because it's at night and outside, at the PNE. There are 2 neon lights and an amusement ride slightly in view behind him."
+                        alt="Picture of Alex Guo smiling and eyes wide open, with hands up and fingers forming a picture frame. The picture was taken with flash on. He is wearing a navy blue jacket with floral designs on top of a white background, located near the top of the jacket. He is also wearing a navy blue shirt underneath the jacket. There is a dark background because it's at night and outside, at the PNE. There are 2 neon lights and an amusement ride slightly in view behind him."
                         className="h-140 w-100 rounded-4xl transition duration-300 hover:scale-105"
                     />
                 </div>

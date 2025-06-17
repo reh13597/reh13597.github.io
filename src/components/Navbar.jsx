@@ -29,7 +29,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="navbar-end">
-                <div className="flex flex-none gap-2">
+                <div className="flex flex-none gap-3">
                     <a target="_blank" href="https://www.instagram.com/alex_guo_888/" className="btn btn-ghost btn-primary transition duration-300 hover:scale-110"><img src={instagramIcon} alt="Instagram Hyperlink" className="h-6 w-6" /></a>
                     <a target="_blank" href="https://www.facebook.com/alex.guo.334839/"className="btn btn-ghost btn-primary transition duration-300 hover:scale-110"><img src={facebookIcon} alt="Facebook Hyperlink" className="h-6 w-6" /></a>
                     <a target="_blank" href="https://github.com/reh13597"className="btn btn-ghost btn-primary transition duration-300 hover:scale-110"><img src={githubIcon} alt="GitHub Hyperlink" className="h-6 w-6" /></a>
