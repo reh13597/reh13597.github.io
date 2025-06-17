@@ -12,10 +12,10 @@ export default function Coding() {
     })
 
     return(
-        <div className="grid grid-rows-2">
-            <div className={`bg-base-300 rounded-4xl p-6 shadow-lg h-80 w-280 mx-auto mt-8 transition ${isVisible ? 'opacity-100 translate-x-0 delay-100' : 'opacity-0 translate-x-20'}`}>
-                <div className="flex justify-center">
-                    <h1 className="text-4xl font-semibold transition duration-300 hover:scale-130 cursor-default select-none">Skills</h1>
+        <div className="grid grid-rows-2 w-fit m-auto">
+            <div className={`bg-base-300 rounded-4xl p-6 shadow-lg h-fit w-[100%] m-auto transition ${isVisible ? 'opacity-100 translate-x-0 delay-100' : 'opacity-0 translate-x-20'}`}>
+                <div className="flex">
+                    <h1 className="text-4xl font-semibold transition duration-300 hover:scale-115 hover:text-primary cursor-default select-none">Skills</h1>
                 </div>
                 <div className="grid grid-cols-3 gap-5 mt-5">
                     <div className={`flex justify-center transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-15'}`}>
@@ -29,11 +29,11 @@ export default function Coding() {
                     </div>
                 </div>
             </div>
-            <div className={`bg-base-300 rounded-4xl p-6 shadow-lg h-110 w-430 mx-auto -mt-7 transition ${isVisible ? 'opacity-100 translate-x-0 delay-900' : 'opacity-0 -translate-x-20'}`}>
-                <div className="flex justify-center">
-                    <h1 className="text-4xl font-semibold transition duration-300 hover:scale-130 cursor-default select-none">Projects</h1>
+            <div className={`bg-base-300 rounded-4xl p-6 shadow-lg h-fit w-[100%] mx-auto -mt-5 transition ${isVisible ? 'opacity-100 translate-x-0 delay-900' : 'opacity-0 -translate-x-20'}`}>
+                <div className="flex">
+                    <h1 className="text-4xl font-semibold transition duration-300 hover:scale-115 hover:text-primary cursor-default select-none">Projects</h1>
                 </div>
-                <div className="grid grid-cols-2 gap-3 mt-5">
+                <div className="grid grid-cols-2 gap-5 mt-5">
                     <div className={`flex justify-center transition ${isVisible ? 'opacity-100 translate-y-0 delay-1300' : 'opacity-0 translate-y-5'}`}>
                         <ProjectCard
                             title={'Descent Into Madness'}

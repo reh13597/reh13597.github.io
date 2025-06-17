@@ -23,9 +23,9 @@ export default function Navbar() {
             </div>
             <div className="navbar-center">
                 <div role="tablist" className="flex-auto tabs tabs-border tabs-xl text-primary">
-                    <Link role="tab" to="/" className={`tab transition duration-300 hover:scale-120 ${pathName === '/' ? 'tab tab-active' : ''}`}>Home</Link>
-                    <Link role="tab" to="/coding" className={`tab transition duration-300 hover:scale-120 ${pathName === '/coding' ? 'tab tab-active' : ''}`}>Coding</Link>
-                    <Link role="tab" to="/contact" className={`tab transition duration-300 hover:scale-120 ${pathName === '/contact' ? 'tab tab-active' : ''}`}>Contact</Link>
+                    <Link role="tab" to="/" className={`tab transition duration-300 hover:scale-110 ${pathName === '/' ? 'tab tab-active' : ''}`}>Home</Link>
+                    <Link role="tab" to="/coding" className={`tab transition duration-300 hover:scale-110 ${pathName === '/coding' ? 'tab tab-active' : ''}`}>Coding</Link>
+                    <Link role="tab" to="/contact" className={`tab transition duration-300 hover:scale-110 ${pathName === '/contact' ? 'tab tab-active' : ''}`}>Contact</Link>
                 </div>
             </div>
             <div className="navbar-end">
