@@ -1,6 +1,6 @@
 export default function SkillCard({ title, items = [] }) {
    return(
-        <div className="card card-lg bg-base-100 h-50 w-120 shadow-sm transition duration-300 hover:scale-105">
+        <div className="card card-lg bg-base-100 shadow-sm transition duration-300 hover:scale-105">
             <div className="card-body">
                 <div className="flex justify-left">
                     <h2 className="card-title transition duration-300 hover:scale-115 hover:text-primary cursor-default select-none">{title}</h2>

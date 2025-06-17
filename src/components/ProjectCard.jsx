@@ -2,9 +2,9 @@ export default function ProjectCard({ title, description, link, picture, altText
    return(
         <div className="card card-side card-lg bg-base-100 shadow-sm transition duration-300 hover:scale-103">
             <figure>
-                <img className="h-80 w-60 transition duration-300 hover:scale-110" src={picture} alt={altText} />
+                <img className="transition duration-300 hover:scale-110" src={picture} alt={altText} />
             </figure>
-            <div className="card-body h-60 w-140">
+            <div className="card-body w-fit">
                 <div className="flex">
                     <h2 className="card-title transition duration-300 hover:scale-115 hover:text-primary cursor-default select-none">{title}</h2>
                 </div>
