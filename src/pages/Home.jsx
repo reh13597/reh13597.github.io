@@ -7,7 +7,7 @@ export default function Home() {
 
     useEffect(() => {
         setTimeout(() => setIsVisible(true), 300)
-    }, [])
+    })
 
     return(
         <div className={`bg-base-300 rounded-4xl p-10 shadow-lg w-[90%] m-auto mt-10 transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-10'} `}>
