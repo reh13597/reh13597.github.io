@@ -10,7 +10,7 @@ export default function ProjectCard({ title, description, link, picture, altText
                 </div>
                 <p className="transition duration-300 hover:scale-105 cursor-default select-none">{description}</p>
                 <div className="card-actions">
-                    <a target="_blank" href={link} className="btn btn-soft btn-primary text-base-content mt-2 transition duration-300 hover:scale-110">Check it out!</a>
+                    <a target="_blank" href={link} className="btn btn-soft btn-primary text-base-content mt-2 transition duration-300 hover:scale-110 hover:text-base-300">Check it out!</a>
                 </div>
             </div>
         </div>

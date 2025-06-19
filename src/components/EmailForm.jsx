@@ -10,6 +10,8 @@ export default function EmailForm() {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [showErrorMessage, setShowErrorMessage] = useState(false)
 
+    const [isVisible, setIsVisible] = useState(false)
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
@@ -30,32 +32,33 @@ export default function EmailForm() {
     }
 
     useEffect(() => {
-        setTimeout(() => setShowSuccessMessage(false), 12000)
-        setTimeout(() => setShowErrorMessage(false), 12000)
+        setTimeout(() => setIsVisible(true), 300)
+        setTimeout(() => setShowSuccessMessage(false), 15000)
+        setTimeout(() => setShowErrorMessage(false), 15000)
     })
 
     return(
         <form onSubmit={handleSubmit} className="grid grid-rows-[auto_auto_auto_auto] gap-10">
             <div className="grid grid-cols-2 gap-5">
-                <fieldset className="fieldset w-full">
-                    <legend className="fieldset-legend text-lg">Name</legend>
+                <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
+                    <legend className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">Name</legend>
                     <input type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)} className="input w-full" required />
                 </fieldset>
-                <fieldset className="fieldset w-full">
-                    <legend className="fieldset-legend text-lg">Email</legend>
+                <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
+                    <legend className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">Email</legend>
                     <input type="email" name="from_email" value={email} onChange={(e) => setEmail(e.target.value)} className="input w-full" required />
                 </fieldset>
             </div>
-            <fieldset className="fieldset">
-                <legend className="fieldset-legend text-lg">Subject</legend>
+            <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-10'}`}>
+                <legend className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">Subject</legend>
                 <input type="text" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="input w-full" required />
             </fieldset>
-            <fieldset className="fieldset">
-                <legend className="fieldset-legend text-lg">Message</legend>
+            <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-10'}`}>
+                <legend className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">Message</legend>
                 <textarea type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="textarea h-30 w-full" required></textarea>
             </fieldset>
-            <div className="flex justify-center mb-15">
-                <button type="submit" className="btn btn-lg btn-soft btn-primary w-[60%] text-xl text-base-content">Send!</button>
+            <div className={`flex justify-center mb-15 transition ${isVisible ? 'opacity-100 translate-y-0 delay-900' : 'opacity-0 translate-y-10'}`}>
+                <button type="submit" className="btn btn-lg btn-soft btn-primary w-[60%] text-xl text-base-content transition duration-300 hover:scale-105 hover:text-base-300">Send!</button>
             </div>
             {showSuccessMessage && (
                 <div role="alert" className="alert bg-primary -mt-15 mb-15">
