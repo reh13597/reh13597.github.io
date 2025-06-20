@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react';
 import pic1 from '../assets/images/me1.jpg';
 import pic2 from '../assets/images/me2.jpg';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false)
@@ -24,9 +24,18 @@ export default function Home() {
                         <span className="text-8xl">Hi! I'm </span>
                         <span className="text-8xl text-primary">Alex</span>
                         <span className="text-8xl">. </span>
-                        <p className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-15'}`}>A third year CS student at SFU who is passionate about building clean, scalable software.</p>
-                        <p className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-20'}`}>In my free time, I love to play video games, watch anime, go on hikes, and ski with my buddies.</p>
-                        <p className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-900' : 'opacity-0 translate-y-25'}`}>Driven by curiosity, I'm always ready to learn something new!</p>
+                        <p
+                            className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-15'}`}>
+                            A third year CS student at SFU who is passionate about building clean, scalable software.
+                        </p>
+                        <p
+                            className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-20'}`}>
+                            In my free time, I love to play video games, watch anime, go on hikes, and ski with my buddies.
+                        </p>
+                        <p
+                            className={`text-4xl mt-5 transition ${isVisible ? 'opacity-100 translate-y-0 delay-900' : 'opacity-0 translate-y-25'}`}>
+                            Driven by curiosity, I'm always ready to learn something new!
+                        </p>
                     </div>
                 </div>
                 <div className={`flex justify-center mt-1 transition ${isVisible ? 'opacity-100 translate-y-0 delay-1300' : 'opacity-0 -translate-y-30'}`}>

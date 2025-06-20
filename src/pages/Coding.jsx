@@ -19,13 +19,22 @@ export default function Coding() {
                 </div>
                 <div className="grid grid-cols-3 gap-5 mt-5 justify-items-center">
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-15'}`}>
-                        <SkillCard title={'Languages'} items={['Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Python', 'C/C++', 'C#', 'Lua']} />
+                        <SkillCard
+                            title={'Languages'}
+                            items={['Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Python', 'C/C++', 'C#', 'Lua']}
+                        />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-15'}`}>
-                        <SkillCard title={'Frameworks'} items={['React', 'MUI', 'Svelte', 'TailwindCSS', 'DaisyUI']} />
+                        <SkillCard
+                            title={'Frameworks'}
+                            items={['React', 'MUI', 'Svelte', 'TailwindCSS', 'DaisyUI']}
+                        />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-15'}`}>
-                        <SkillCard title={'Tools'} items={['Supabase', 'Git', 'GitHub', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']} />
+                        <SkillCard
+                            title={'Tools'}
+                            items={['Supabase', 'Git', 'GitHub', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
+                        />
                     </div>
                 </div>
             </div>

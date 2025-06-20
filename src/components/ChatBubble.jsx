@@ -6,8 +6,14 @@ export default function ChatBubble({ className1 = '', className2 = '', pfp, altT
                     <img alt={altText} src={pfp} />
                 </div>
             </div>
-            <div className="chat-header text-lg cursor-default select-none transition duration-300 hover:scale-110 hover:text-primary">{username}</div>
-            <div className={`chat-bubble text-base-content text-lg transition duration-300 hover:scale-103 ${className2}`}>{message}</div>
+            <div
+                className="chat-header text-lg cursor-default select-none transition duration-300 hover:scale-110 hover:text-primary">
+                {username}
+            </div>
+            <div
+                className={`chat-bubble text-base-content text-lg transition duration-300 hover:scale-103 ${className2}`}>
+                {message}
+            </div>
         </div>
     );
 }
