@@ -32,9 +32,15 @@ export default function EmailForm() {
     }
 
     useEffect(() => {
-        setTimeout(() => setIsVisible(true), 300)
-        setTimeout(() => setShowSuccessMessage(false), 15000)
-        setTimeout(() => setShowErrorMessage(false), 15000)
+        const showTimeout = setTimeout(() => setIsVisible(true), 300)
+        const showSuccess = setTimeout(() => setShowSuccessMessage(false), 10000)
+        const showError = setTimeout(() => setShowErrorMessage(false), 10000)
+
+        return () => {
+            clearTimeout(showTimeout);
+            clearTimeout(showSuccess);
+            clearTimeout(showError);
+        }
     })
 
     return(
