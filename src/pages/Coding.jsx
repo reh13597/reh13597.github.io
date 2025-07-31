@@ -33,7 +33,7 @@ export default function Coding() {
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-15'}`}>
                         <SkillCard
                             title={'Tools'}
-                            items={['Supabase', 'Git', 'GitHub', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
+                            items={['Supabase', 'Git', 'GitHub', 'GitHub Actions', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
                         />
                     </div>
                 </div>
