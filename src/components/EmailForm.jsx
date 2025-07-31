@@ -99,7 +99,7 @@ export default function EmailForm() {
                     name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="textarea h-30 w-full"
+                    className="textarea h-30 w-full overflow-y-auto"
                     required>
                 </textarea>
             </fieldset>
