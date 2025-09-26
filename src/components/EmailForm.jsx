@@ -52,7 +52,7 @@ export default function EmailForm() {
             <div className="grid grid-cols-2 gap-5">
                 <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
                     <legend
-                        className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">
+                        className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
                         Name
                     </legend>
                     <input
@@ -66,7 +66,7 @@ export default function EmailForm() {
                 </fieldset>
                 <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
                     <legend
-                        className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">
+                        className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
                         Email
                     </legend>
                     <input
@@ -81,7 +81,7 @@ export default function EmailForm() {
             </div>
             <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-10'}`}>
                 <legend
-                    className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">
+                    className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
                     Subject
                 </legend>
                 <input
@@ -95,7 +95,7 @@ export default function EmailForm() {
             </fieldset>
             <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-10'}`}>
                 <legend
-                    className="fieldset-legend text-lg cursor-default select-none transition duration-300 hover:scale-115 hover:text-primary">
+                    className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
                     Message
                 </legend>
                 <textarea
@@ -110,7 +110,7 @@ export default function EmailForm() {
             <div className={`flex justify-center mb-15 transition ${isVisible ? 'opacity-100 translate-y-0 delay-900' : 'opacity-0 translate-y-10'}`}>
                 <button
                     type="submit"
-                    className="btn btn-lg btn-soft btn-primary w-[60%] text-xl text-base-content transition duration-300 hover:scale-105 hover:text-base-300">
+                    className="btn btn-lg btn-soft btn-primary w-[60%] text-xl text-base-content transition duration-200 hover:scale-105 hover:text-base-300">
                     Send!
                 </button>
             </div>

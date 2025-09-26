@@ -1,10 +1,10 @@
 export default function SkillCard({ title, items = [] }) {
    return(
-        <div className="card card-lg bg-base-100 shadow-sm transition duration-300 hover:scale-105">
+        <div className="card card-lg bg-base-100 shadow-sm">
             <div className="card-body">
                 <div className="flex justify-left">
                     <h2
-                        className="card-title transition duration-300 hover:scale-115 hover:text-primary cursor-default select-none">
+                        className="card-title transition duration-200 hover:scale-108 hover:text-primary cursor-default select-none">
                         {title}
                     </h2>
                 </div>
@@ -12,7 +12,7 @@ export default function SkillCard({ title, items = [] }) {
                     {items.map((item, idx) => (
                         <div
                             key={idx}
-                            className="badge badge-primary transition duration-300 hover:scale-110 cursor-default select-none">
+                            className="badge badge-primary transition duration-200 hover:scale-108 cursor-default select-none">
                             {item}
                         </div>
                     ))}
