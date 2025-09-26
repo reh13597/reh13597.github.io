@@ -8,15 +8,14 @@ export default function ProjectCard({ title, items = [], link, picture, altText 
                     alt={altText}
                 />
             </figure>
-            <div className="card-body w-[50%]">
+            <div className="card-body w-[50%] flex flex-col">
                 <div className="flex">
                     <h2
                         className="card-title transition duration-200 hover:scale-108 hover:text-primary cursor-default select-none">
                         {title}
                     </h2>
                 </div>
-                {/* <p className="cursor-default select-none">{description}</p> */}
-                <div className="flex flex-wrap gap-2 mt-4 justify-left">
+                <div className="flex flex-wrap gap-2 mt-4 justify-left mb-4">
                     {items.map((item, idx) => (
                         <div
                             key={idx}
@@ -25,7 +24,7 @@ export default function ProjectCard({ title, items = [], link, picture, altText 
                         </div>
                     ))}
                 </div>
-                <div className="card-actions">
+                <div className="card-actions mt-auto">
                     <a
                         target="_blank"
                         href={link}
