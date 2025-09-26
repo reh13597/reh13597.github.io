@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return(
         <div className={`navbar bg-base-300 shadow-sm transition ${isVisible ? 'opacity-100 translate-y-0 delay-100' : 'opacity-0 translate-y-5'}`}>
-            <div className="navbar-start">
+            <div className="navbar-start pl-20">
                 <div className="flex flex-1">
                     <Link
                         to="/"
@@ -47,7 +47,7 @@ export default function Navbar() {
                     </Link>
                 </div>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end pr-20">
                 <div className="flex flex-none gap-3">
                     <a
                         target="_blank"
