@@ -48,8 +48,7 @@ export default function Coding() {
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-1100' : 'opacity-0 translate-y-5'}`}>
                         <ProjectCard
                             title={'Recipedia'}
-                            items={['React', 'TailwindCSS', 'DaisyUI', 'TheMealDB API', 'APINinjas', 'Agile Scrum & Kanban', 'CI/CD', 'Meal Planning', 'Nutrition', 'Recipe Search', 'Image Scanner']}
-                            //description={'Server Nexus is a full-stack website that I am currently working on. I am building the frontend with Svelte, TailwindCSS, and DaisyUI. The backend is handled by Supabase. It is a website where users can create an account to: find the status of any Minecraft server, create Minecraft server "profiles" that are either public or private, and view profiles posted by other users. A server profile includes the server status, live server chat, player stats & achievements, and a server map.'}
+                            items={['React', 'TailwindCSS', 'DaisyUI', 'TheMealDB API', 'APINinjas', 'CI/CD', 'Agile Scrum & Kanban', 'Meal Planning', 'Nutrition', 'Recipe Search', 'Image Scanner']}
                             link={'https://recipedia-mtvj.onrender.com/'}
                             picture={Recipedia}
                             altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
@@ -59,7 +58,6 @@ export default function Coding() {
                         <ProjectCard
                             title={'Server Nexus'}
                             items={['Svelte', 'TailwindCSS', 'DaisyUI', 'Supabase', 'MCStatus API', 'Signup/Login', 'Minecraft Servers', 'Server Status', 'World Maps', 'Player Stats & Achievements']}
-                            //description={'Server Nexus is a full-stack website that I am currently working on. I am building the frontend with Svelte, TailwindCSS, and DaisyUI. The backend is handled by Supabase. It is a website where users can create an account to: find the status of any Minecraft server, create Minecraft server "profiles" that are either public or private, and view profiles posted by other users. A server profile includes the server status, live server chat, player stats & achievements, and a server map.'}
                             link={'https://server-nexus.vercel.app/'}
                             picture={ServerNexus}
                             altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
@@ -69,7 +67,6 @@ export default function Coding() {
                         <ProjectCard
                             title={'GridLock'}
                             items={['Python', 'PyGame', 'TCP Sockets', '2D Multiplayer Game', 'Shared Objects', 'Object Locking', 'PacMan-esque']}
-                            //description={'Server Nexus is a full-stack website that I am currently working on. I am building the frontend with Svelte, TailwindCSS, and DaisyUI. The backend is handled by Supabase. It is a website where users can create an account to: find the status of any Minecraft server, create Minecraft server "profiles" that are either public or private, and view profiles posted by other users. A server profile includes the server status, live server chat, player stats & achievements, and a server map.'}
                             link={'https://github.com/danieldawdaSFU/CMPT-371-Project'}
                             picture={GridLock}
                             altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
@@ -79,7 +76,6 @@ export default function Coding() {
                         <ProjectCard
                             title={'Descent Into Madness'}
                             items={['Roblox Studio', 'Lua', 'Hackathon', '3D Singleplayer Game', 'Horror', 'Puzzle', 'Sanity Drain', 'Monsters']}
-                            //description={'Descent Into Madness was a Roblox horror game developed by me and 3 others during the Mountain Madness 2025 Hackathon. Over the course of 24 hours, we planned, designed, and coded the game in Roblox Studio using Lua. The game delves into the theme of the hackathon, "Descent Into Madness", by plunging the player into a terrifying experience in a small town with mysterious entities, which quickly gets out of hand.'}
                             link={'https://devpost.com/software/descent-into-madness'}
                             picture={Descent}
                             altText={'Picture of Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
