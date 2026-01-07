@@ -5,8 +5,9 @@ import Descent from '../assets/images/descent.JPG';
 import ServerNexus from '../assets/images/servernexus.JPG';
 import GridLock from '../assets/images/gridlock.JPG';
 import Recipedia from '../assets/images/recipedia.JPG';
+import Resume from '../assets/images/resume.jpg';
 
-export default function Coding() {
+export default function Experience() {
     const [isVisible, setIsVisible] = useState(false)
 
     useEffect(() => {
@@ -35,7 +36,7 @@ export default function Coding() {
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-15'}`}>
                         <SkillCard
                             title={'Tools'}
-                            items={['Supabase', 'Git', 'GitHub', 'Docker', 'Linux', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
+                            items={['Supabase', 'Git', 'GitHub', 'Docker', 'Linux', 'Neovim', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
                         />
                     </div>
                 </div>
@@ -51,7 +52,7 @@ export default function Coding() {
                             items={['React', 'TailwindCSS', 'DaisyUI', 'TheMealDB API', 'APINinjas', 'CI/CD', 'Agile Scrum & Kanban', 'Meal Planning', 'Nutrition', 'Recipe Search', 'Image Scanner']}
                             link={'https://recipedia-mtvj.onrender.com/'}
                             picture={Recipedia}
-                            altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
+                            altText={'Logo of the Recipedia website depicting an orange cookbook with a white chefs hat on the cover, situated on a white background.'}
                         />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-1300' : 'opacity-0 translate-y-5'}`}>
@@ -60,16 +61,16 @@ export default function Coding() {
                             items={['Svelte', 'TailwindCSS', 'DaisyUI', 'Supabase', 'MCStatus API', 'Signup/Login', 'Minecraft Servers', 'Server Status', 'World Maps', 'Player Stats & Achievements']}
                             link={'https://server-nexus.vercel.app/'}
                             picture={ServerNexus}
-                            altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
+                            altText={'Logo of the Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
                         />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-1700' : 'opacity-0 translate-y-5'}`}>
                         <ProjectCard
-                            title={'GridLock'}
-                            items={['Python', 'PyGame', 'TCP Sockets', '2D Multiplayer Game', 'Shared Objects', 'Object Locking', 'PacMan-esque']}
-                            link={'https://github.com/danieldawdaSFU/CMPT-371-Project'}
-                            picture={GridLock}
-                            altText={'Logo of Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
+                            title={'Resume-to-Job Recommender'}
+                            items={['Python', 'HuggingFace', 'AI', 'scikit-learn', 'pandas/numpy', 'matplotlib/seaborn', 'spaCy', 'scipy', 'joblib', 'Logistic Regression', 'Cosine Similarity', 'Job/Co-op Applications']}
+                            link={'https://github.com/reh13597/CMPT310-Resume-Parser'}
+                            picture={Resume}
+                            altText={'Picture of multiple peoples arms raised wearing different colored sweaters, all holding a resume in the air, with a sky blue background.'}
                         />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-1500' : 'opacity-0 translate-y-5'}`}>
@@ -78,7 +79,16 @@ export default function Coding() {
                             items={['Roblox Studio', 'Lua', 'Hackathon', '3D Singleplayer Game', 'Horror', 'Puzzle', 'Sanity Drain', 'Monsters']}
                             link={'https://devpost.com/software/descent-into-madness'}
                             picture={Descent}
-                            altText={'Picture of Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
+                            altText={'Picture of the Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
+                        />
+                    </div>
+                    <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-1700' : 'opacity-0 translate-y-5'}`}>
+                        <ProjectCard
+                            title={'GridLock'}
+                            items={['Python', 'PyGame', 'TCP Sockets', '2D Multiplayer Game', 'Shared Objects', 'Object Locking', 'PacMan-esque']}
+                            link={'https://github.com/danieldawdaSFU/CMPT-371-Project'}
+                            picture={GridLock}
+                            altText={'Screenshot of gameplay of GridLock, featuring a black grid with white lines, yellow square obstacles with black crosses, circular players with different colors named P1 through P4, and multiple squares with the number 40 and colors corresponding to the players.'}
                         />
                     </div>
                 </div>

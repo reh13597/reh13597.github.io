@@ -35,9 +35,9 @@ export default function Navbar() {
                     </Link>
                     <Link
                         role="tab"
-                        to="/coding"
-                        className={`tab transition duration-200 hover:scale-108 ${pathName === '/coding' ? 'tab tab-active' : ''}`}>
-                        Coding
+                        to="/experience"
+                        className={`tab transition duration-200 hover:scale-108 ${pathName === '/experience' ? 'tab tab-active' : ''}`}>
+                        Experience
                     </Link>
                     <Link
                         role="tab"
