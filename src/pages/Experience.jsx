@@ -24,7 +24,7 @@ export default function Experience() {
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-15'}`}>
                         <SkillCard
                             title={'Languages'}
-                            items={['Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Python', 'C/C++', 'C#', 'Lua']}
+                            items={['Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Python', 'C/C++', 'C#', 'x86 Assembly', 'Lua']}
                         />
                     </div>
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-15'}`}>
@@ -36,7 +36,7 @@ export default function Experience() {
                     <div className={`flex transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-15'}`}>
                         <SkillCard
                             title={'Tools'}
-                            items={['Supabase', 'Git', 'GitHub', 'Docker', 'Linux', 'Neovim', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
+                            items={['Supabase', 'Git', 'GitHub', 'Docker', 'Toggl Track', 'Jira', 'Linux', 'Neovim', 'Vercel', 'Figma', 'Visual Studio Code', 'Unity', 'Roblox Studio']}
                         />
                     </div>
                 </div>
