@@ -1,9 +1,9 @@
 export default function ProjectCard({ title, items = [], link, picture, altText }) {
    return(
-        <div className="card card-side card-lg bg-base-100 shadow-sm">
+        <div className="card card-side card-sm bg-base-100">
             <figure>
                 <img
-                    className="transition duration-300 hover:scale-105 w-60"
+                    className="transition duration-300 hover:scale-110 w-50"
                     src={picture}
                     alt={altText}
                 />
@@ -11,7 +11,7 @@ export default function ProjectCard({ title, items = [], link, picture, altText 
             <div className="card-body w-[50%] flex flex-col">
                 <div className="flex">
                     <h2
-                        className="card-title transition duration-200 hover:scale-108 hover:text-primary cursor-default select-none">
+                        className="card-title transition duration-200 hover:scale-108 cursor-default select-none">
                         {title}
                     </h2>
                 </div>

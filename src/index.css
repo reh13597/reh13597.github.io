@@ -37,6 +37,9 @@
 }
 
 :root {
-  background-color: var(--color-base-200);
+  background-color: var(--color-base-300);
 }
 
+html {
+  scroll-behavior: smooth;
+}
