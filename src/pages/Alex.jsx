@@ -8,7 +8,7 @@ import Family from '../assets/images/alex/alex_family.JPG';
 import LL from '../assets/images/alex/alex_LL.JPG';
 import Cypress1 from '../assets/images/alex/cypress1.jpeg';
 import Hack from '../assets/images/alex/alex_hack.JPG';
-import Jack from '../assets/images/alex/alex_jack.jpeg';
+import Jack from '../assets/images/alex/alex_jack.JPEG';
 import June from '../assets/images/alex/alex_june.JPEG';
 import Sphynx from '../assets/images/alex/alex_sphynx.JPEG';
 import Xmas from '../assets/images/alex/alex_xmas.jpg';
