@@ -5,7 +5,7 @@ import Chief2 from '../assets/images/alex/alex_chief2.jpeg';
 import Grouse from '../assets/images/alex/alex_grouse.JPG';
 import Lillooet from '../assets/images/alex/alex_lillooet.JPG';
 import Family from '../assets/images/alex/alex_family.JPG';
-import LL from '../assets/images/alex/alex_ll.JPG';
+import LL from '../assets/images/alex/alex_LL.JPG';
 import Cypress1 from '../assets/images/alex/cypress1.jpeg';
 import Hack from '../assets/images/alex/alex_hack.JPG';
 import Jack from '../assets/images/alex/alex_jack.jpeg';
