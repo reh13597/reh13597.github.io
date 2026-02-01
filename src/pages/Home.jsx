@@ -38,6 +38,9 @@ export default function Home() {
                             </span>
                         </code>
                     </pre>
+                    <pre data-prefix=">" className="text-xl"><code className="-mx-1 select-none animate-caret">|</code></pre>
+                    <pre></pre>
+                    <pre></pre>
                 </div>
             </figure>
 

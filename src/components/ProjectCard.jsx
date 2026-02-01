@@ -1,19 +1,25 @@
-export default function ProjectCard({ title, items = [], link, picture, altText }) {
+export default function ProjectCard({ title, items = [], desc, link, picture, altText }) {
    return(
         <div className="card card-side card-sm bg-base-100">
             <figure>
                 <img
-                    className="transition duration-300 hover:scale-110 w-50"
+                    className="transition duration-300 hover:scale-110 w-55"
                     src={picture}
                     alt={altText}
                 />
             </figure>
-            <div className="card-body w-[50%] flex flex-col">
+            <div className="card-body w-lg flex flex-col">
                 <div className="flex">
-                    <h2
-                        className="card-title transition duration-200 hover:scale-108 cursor-default select-none">
+                    <h1
+                        className="text-xl font-bold">
                         {title}
-                    </h2>
+                    </h1>
+                </div>
+                <div className="flex">
+                    <p
+                        className="text-lg">
+                        {desc}
+                    </p>
                 </div>
                 <div className="flex flex-wrap gap-2 mt-4 justify-left mb-4">
                     {items.map((item, idx) => (
