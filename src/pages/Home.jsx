@@ -1,11 +1,15 @@
 export default function Home() {
     return(
-        <div className="hover-3d">
-            <figure className="w-200 rounded-2xl">
-                <div className="mockup-code bg-base-200">
-                    <pre data-prefix="$" className="bg-primary text-black text-2xl"><code className="-mx-1">Hi, I'm Alex Guo!</code></pre>
-                    <pre data-prefix=">" className="text-xl"><code>Third year CS student @ SFU 🍁</code></pre>
-                    <pre data-prefix=">" className="text-xl">
+        <div className="flex justify-center px-4 sm:px-6 lg:px-10">
+            <div className="w-full max-w-md sm:max-w-md md:max-w-2xl lg:max-w-3xl rounded-2xl">
+                <div className="mockup-code bg-base-200 w-full">
+                    <pre data-prefix="$" className="bg-primary text-black sm:text-md md:text-xl lg:text-2xl">
+                        <code>Hi, I'm Alex Guo!</code>
+                    </pre>
+                    <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
+                        <code>Third year CS student @ SFU 🍁</code>
+                    </pre>
+                    <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
                         <code>
                             <span>
                                 I am passionate about
@@ -21,7 +25,7 @@ export default function Home() {
                             </span>
                         </code>
                     </pre>
-                    <pre data-prefix=">" className="text-xl">
+                    <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
                         <code>
                             <span>
                                 I go crazy for
@@ -38,20 +42,11 @@ export default function Home() {
                             </span>
                         </code>
                     </pre>
-                    <pre data-prefix=">" className="text-xl"><code className="-mx-1 select-none animate-caret">|</code></pre>
+                    <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl"><code className="-mx-1 select-none animate-caret">|</code></pre>
                     <pre></pre>
                     <pre></pre>
                 </div>
-            </figure>
-
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            </div>
         </div>
     );
 }
