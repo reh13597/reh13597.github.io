@@ -6,5 +6,5 @@ Welcome to my personal portfolio website, built using **React**, **Vite**, **Tai
 
 ## Note
 
-This website was built entirely for the 1920x1080 resolution, so it is not responsive, ***yet***.
+This website is still a work in progress.
 
