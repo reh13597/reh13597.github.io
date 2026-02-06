@@ -30,7 +30,7 @@ export default function Alex() {
     ];
 
     return(
-        <div className="max-w-6xl mx-auto mt-15 px-4">
+        <div className="max-w-6xl mx-auto md:mt-15 mt-30 px-10">
             <MasonryGallery items={galleryItems} />
         </div>
     );
