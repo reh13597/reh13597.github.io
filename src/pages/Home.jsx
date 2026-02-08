@@ -1,7 +1,6 @@
 export default function Home() {
     return(
-        <div className="flex justify-center px-4 sm:px-6 lg:px-10 select-none">
-            <div className="w-full max-w-md sm:max-w-md md:max-w-2xl lg:max-w-3xl rounded-2xl">
+        <div className="flex justify-center px-4 sm:px-6 lg:px-10 select-none transition duration-200 hover:scale-105">
                 <div className="mockup-code bg-base-200 w-full shadow-2xl">
                     <pre data-prefix="$" className="bg-primary text-black md:text-2xl lg:text-3xl">
                         <code className="md:-mx-1 lg:-mx-2">Hi, I'm Alex Guo!</code>
@@ -46,7 +45,6 @@ export default function Home() {
                     <pre></pre>
                     <pre></pre>
                 </div>
-            </div>
         </div>
     );
 }

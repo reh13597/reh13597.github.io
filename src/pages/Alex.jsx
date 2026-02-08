@@ -1,5 +1,3 @@
-import MasonryGallery from '../components/MasonryGallery';
-
 import Chief1 from '../assets/images/alex/alex_chief1.jpeg';
 import Chief2 from '../assets/images/alex/alex_chief2.jpeg';
 import Grouse from '../assets/images/alex/alex_grouse.JPG';
@@ -30,8 +28,17 @@ export default function Alex() {
     ];
 
     return(
-        <div className="max-w-6xl mx-auto md:mt-15 mt-30 px-10">
-            <MasonryGallery items={galleryItems} />
+        <div className="w-full max-w-6xl mx-auto md:mt-15 mt-30 px-20">
+            <div className="columns-1 sm:columns-2 xl:columns-3 gap-2 sm:gap-4 space-y-3">
+                {galleryItems.map((item, index) => (
+                    <img
+                        key={index}
+                        src={item.img}
+                        alt="Alex"
+                        className="w-full h-auto break-inside-avoid rounded-2xl transition duration-200 hover:scale-110"
+                    />
+                ))}
+            </div>
         </div>
     );
 }

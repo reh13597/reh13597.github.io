@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 import Alex from './pages/Alex';
 import Contact from './pages/Contact';
 import './App.css';
@@ -10,21 +11,25 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <div id="home" className="min-h-screen flex items-center justify-center">
+      <section id="home" className="min-h-screen flex items-center justify-center">
         <Home />
-      </div>
+      </section>
 
-      <div id="projects" className="min-h-screen flex items-center justify-center">
+      <section id="projects" className="min-h-screen flex items-center justify-center">
         <Projects />
-      </div>
+      </section>
 
-      <div id="alex" className="min-h-screen flex items-center justify-center">
+      <section id="skills" className="min-h-screen flex items-center justify-center">
+        <Skills />
+      </section>
+
+      <section id="alex" className="min-h-screen flex items-start justify-center">
         <Alex />
-      </div>
+      </section>
 
-      <div id="contact" className="min-h-screen flex items-center justify-center">
+      {/* <section id="contact" className="min-h-screen flex items-center justify-center">
         <Contact />
-      </div>
+      </section> */}
     </div>
   );
 }

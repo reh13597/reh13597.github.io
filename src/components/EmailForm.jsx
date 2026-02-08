@@ -10,8 +10,6 @@ export default function EmailForm() {
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [showErrorMessage, setShowErrorMessage] = useState(false)
 
-    const [isVisible, setIsVisible] = useState(false)
-
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
@@ -37,8 +35,8 @@ export default function EmailForm() {
 
     useEffect(() => {
         const showTimeout = setTimeout(() => setIsVisible(true), 300)
-        const showSuccess = setTimeout(() => setShowSuccessMessage(false), 10000)
-        const showError = setTimeout(() => setShowErrorMessage(false), 10000)
+        const showSuccess = setTimeout(() => setShowSuccessMessage(false), 5000)
+        const showError = setTimeout(() => setShowErrorMessage(false), 5000)
 
         return () => {
             clearTimeout(showTimeout);
@@ -48,11 +46,11 @@ export default function EmailForm() {
     })
 
     return(
-        <form onSubmit={handleSubmit} className="grid grid-rows-[auto_auto_auto_auto] gap-10">
+        <form onSubmit={handleSubmit} className="grid">
             <div className="grid grid-cols-2 gap-5">
-                <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
+                <fieldset className="fieldset w-full">
                     <legend
-                        className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
+                        className="fieldset-legend text-lg cursor-default select-none">
                         Name
                     </legend>
                     <input
@@ -64,9 +62,9 @@ export default function EmailForm() {
                         required
                     />
                 </fieldset>
-                <fieldset className={`fieldset w-full transition ${isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-10'}`}>
+                <fieldset className="fieldset w-full transition">
                     <legend
-                        className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
+                        className="fieldset-legend text-lg cursor-default select-none">
                         Email
                     </legend>
                     <input
@@ -79,9 +77,9 @@ export default function EmailForm() {
                     />
                 </fieldset>
             </div>
-            <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-500' : 'opacity-0 translate-y-10'}`}>
+            <fieldset className="fieldset transition">
                 <legend
-                    className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
+                    className="fieldset-legend text-lg cursor-default select-none">
                     Subject
                 </legend>
                 <input
@@ -93,9 +91,9 @@ export default function EmailForm() {
                     required
                 />
             </fieldset>
-            <fieldset className={`fieldset transition ${isVisible ? 'opacity-100 translate-y-0 delay-700' : 'opacity-0 translate-y-10'}`}>
+            <fieldset className="fieldset transition">
                 <legend
-                    className="fieldset-legend text-lg cursor-default select-none transition duration-200 hover:scale-108 hover:text-primary">
+                    className="fieldset-legend text-lg cursor-default select-none">
                     Message
                 </legend>
                 <textarea
@@ -107,15 +105,15 @@ export default function EmailForm() {
                     required>
                 </textarea>
             </fieldset>
-            <div className={`flex justify-center mb-15 transition ${isVisible ? 'opacity-100 translate-y-0 delay-900' : 'opacity-0 translate-y-10'}`}>
+            <div className="flex justify-center mb-15 transition">
                 <button
                     type="submit"
-                    className="btn btn-lg btn-soft btn-primary w-[60%] text-xl text-base-content transition duration-200 hover:scale-105 hover:text-base-300">
+                    className="btn btn-lg btn-soft btn-primary w-[50%] mt-5 text-xl text-base-content transition duration-200 hover:scale-105 hover:text-base-300">
                     Send!
                 </button>
             </div>
             {showSuccessMessage && (
-                <div role="alert" className="alert bg-primary -mt-15 mb-15">
+                <div role="alert" className="alert bg-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
                         <path
                             strokeLinecap="round"
@@ -128,7 +126,7 @@ export default function EmailForm() {
                 </div>
             )}
             {showErrorMessage && (
-                <div role="alert" class="alert bg-error -mt-15 mb-15">
+                <div role="alert" className="alert bg-error">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
                         <path
                             stroke-linecap="round"

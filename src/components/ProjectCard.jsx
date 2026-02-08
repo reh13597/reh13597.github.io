@@ -1,6 +1,6 @@
 export default function ProjectCard({ title, items = [], desc, link, picture, altText }) {
    return(
-        <div className="card card-sm bg-base-100">
+        <div className="card card-sm bg-base-100 select-none">
             <figure>
                 <img
                     className="transition duration-300 hover:scale-110 w-full h-40 object-cover"
@@ -25,7 +25,7 @@ export default function ProjectCard({ title, items = [], desc, link, picture, al
                     {items.map((item, idx) => (
                         <div
                             key={idx}
-                            className="badge badge-primary transition duration-200 hover:scale-108 cursor-default select-none">
+                            className="lg:text-md md:text-sm sm:text-xs text-xs badge badge-primary transition duration-200 hover:scale-108 cursor-default select-none">
                             {item}
                         </div>
                     ))}
@@ -34,7 +34,7 @@ export default function ProjectCard({ title, items = [], desc, link, picture, al
                     <a
                         target="_blank"
                         href={link}
-                        className="btn btn-soft btn-primary text-base-content transition duration-200 hover:scale-105 hover:text-base-300">
+                        className="btn btn-soft btn-primary lg:text-md md:text-sm sm:text-xs text-xs text-base-content transition duration-200 hover:scale-105 hover:text-base-300">
                         Check it out!
                     </a>
                 </div>

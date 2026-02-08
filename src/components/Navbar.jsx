@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
     const [activeSection, setActiveSection] = useState('home');
 
     const linkClass1 = (section) =>
-        `inline-flex w-fit transition duration-200 hover:text-primary hover:bg-transparent hover:scale-108 text-2xl
+        `inline-flex w-fit transition duration-200 hover:text-primary hover:bg-transparent hover:scale-108 text-xl lg:text-xl xl:text-2xl
         ${activeSection === section ? "text-primary" : "text-white"}`;
 
     const linkClass2 = (section) =>
@@ -49,11 +50,14 @@ export default function Navbar() {
                     <a href="#projects" className={linkClass1("projects")}>Projects</a>
                 </li>
                 <li className="my-2 mx-1">
-                    <a href="#alex" className={linkClass1("alex")}>Alex</a>
+                    <a href="#skills" className={linkClass1("skills")}>Skills</a>
                 </li>
                 <li className="my-2 mx-1">
-                    <a href="#contact" className={linkClass1("contact")}>Contact</a>
+                    <a href="#alex" className={linkClass1("alex")}>Alex</a>
                 </li>
+                {/* <li className="my-2 mx-1">
+                    <a href="#contact" className={linkClass1("contact")}>Contact</a>
+                </li> */}
 
                 <li className="border-none h-3 bg-transparent"></li>
 
@@ -61,7 +65,7 @@ export default function Navbar() {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.instagram.com/alex_guo_888/"
+                        href="https://instagram.com/alex_guo_888/"
                         className={iconWrap}
                     >
                         <FontAwesomeIcon icon={faInstagram} size="2x" className={iconClass} />
@@ -87,6 +91,15 @@ export default function Navbar() {
                         <FontAwesomeIcon icon={faLinkedin} size="2x" className={iconClass} />
                     </a>
                 </li>
+                <li className="my-2">
+                    <a
+                        rel="noreferrer"
+                        href="mailto:alg17@sfu.ca"
+                        className={iconWrap}
+                    >
+                        <FontAwesomeIcon icon={faEnvelope} size="2x" className={iconClass} />
+                    </a>
+                </li>
             </ul>
 
             {/* Small/Mobile Navbar */}
@@ -99,21 +112,24 @@ export default function Navbar() {
                         <a href="#projects" className={linkClass2("projects")}>
                             Projects
                         </a>
+                        <a href="#skills" className={linkClass2("skills")}>
+                            Skills
+                        </a>
                         <a href="#alex" className={linkClass2("alex")}>
                             Alex
                         </a>
-                        <a href="#contact" className={linkClass2("contact")}>
+                        {/* <a href="#contact" className={linkClass2("contact")}>
                             Contact
-                        </a>
+                        </a> */}
 
                         <div className="h-6 w-px bg-base-content/20" />
 
                         <div className="flex items-center gap-4">
                             <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href="https://www.instagram.com/alex_guo_888/"
-                            className={iconWrap}
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://instagram.com/alex_guo_888/"
+                                className={iconWrap}
                             >
                                 <FontAwesomeIcon icon={faInstagram} className={iconClass} />
                             </a>
@@ -132,6 +148,13 @@ export default function Navbar() {
                                 className={iconWrap}
                             >
                                 <FontAwesomeIcon icon={faLinkedin} className={iconClass} />
+                            </a>
+                            <a
+                                rel="noreferrer"
+                                href="mailto:alg17@sfu.ca"
+                                className={iconWrap}
+                            >
+                                <FontAwesomeIcon icon={faEnvelope} className={iconClass} />
                             </a>
                         </div>
                     </div>
