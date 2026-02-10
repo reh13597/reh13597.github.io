@@ -19,9 +19,9 @@ function App() {
         <Projects />
       </section>
 
-      <section id="skills" className="min-h-screen flex items-center justify-center">
+      {/* <section id="skills" className="min-h-screen flex items-center justify-center">
         <Skills />
-      </section>
+      </section> */}
 
       <section id="alex" className="min-h-screen flex items-start justify-center">
         <Alex />

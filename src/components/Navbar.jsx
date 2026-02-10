@@ -49,9 +49,9 @@ export default function Navbar() {
                 <li className="my-2 mx-1">
                     <a href="#projects" className={linkClass1("projects")}>Projects</a>
                 </li>
-                <li className="my-2 mx-1">
+                {/* <li className="my-2 mx-1">
                     <a href="#skills" className={linkClass1("skills")}>Skills</a>
-                </li>
+                </li> */}
                 <li className="my-2 mx-1">
                     <a href="#alex" className={linkClass1("alex")}>Alex</a>
                 </li>
@@ -112,9 +112,9 @@ export default function Navbar() {
                         <a href="#projects" className={linkClass2("projects")}>
                             Projects
                         </a>
-                        <a href="#skills" className={linkClass2("skills")}>
+                        {/* <a href="#skills" className={linkClass2("skills")}>
                             Skills
-                        </a>
+                        </a> */}
                         <a href="#alex" className={linkClass2("alex")}>
                             Alex
                         </a>
