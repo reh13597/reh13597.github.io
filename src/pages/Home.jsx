@@ -1,7 +1,7 @@
 export default function Home() {
     return(
-        <div className="flex justify-center px-4 sm:px-6 lg:px-10 select-none transition duration-200 hover:scale-105">
-            <div className="mockup-code bg-base-200 w-full border-2 border-neutral">
+        <div className="flex justify-center px-10 select-none transition duration-200 hover:scale-103">
+            <div className="mockup-code bg-base-200 max-w-3xl border-2 border-neutral hover:border-primary hover:border-1">
                 <pre data-prefix="$" className="bg-primary text-black md:text-2xl lg:text-3xl">
                     <code className="md:-mx-1 lg:-mx-2">Hi, I'm Alex Guo!</code>
                 </pre>

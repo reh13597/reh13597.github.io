@@ -1,6 +1,6 @@
 export default function ProjectCard({ title, items = [], desc, link, picture, altText }) {
    return(
-        <div className="card card-sm max-w-sm bg-base-100 border-3 border-neutral select-none transition duration-200 hover:scale-103">
+        <div className="card card-sm max-w-xs lg:max-w-sm bg-base-100 border-3 border-neutral hover:border-primary hover:border-2 select-none transition duration-200 hover:scale-102">
             <figure>
                 <img
                     className="w-full max-h-40 object-cover"

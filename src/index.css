@@ -52,3 +52,9 @@ html {
 .animate-caret {
   animation: caretBlink 1.1s steps(1) infinite;
 }
+
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
