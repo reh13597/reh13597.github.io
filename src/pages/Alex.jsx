@@ -28,14 +28,14 @@ export default function Alex() {
     ];
 
     return(
-        <div className="w-full max-w-6xl mx-auto md:mt-15 mt-30 px-20">
+        <div className="w-full max-w-6xl mx-auto md:mt-15 mt-30 px-20 mb-10">
             <div className="columns-1 sm:columns-2 xl:columns-3 gap-2 sm:gap-4 space-y-3">
                 {galleryItems.map((item, index) => (
                     <img
                         key={index}
                         src={item.img}
                         alt="Alex"
-                        className="w-full h-auto break-inside-avoid rounded-2xl transition duration-200 hover:scale-110"
+                        className="w-full h-auto break-inside-avoid rounded-2xl border-4 border-neutral transition duration-200 hover:scale-105"
                     />
                 ))}
             </div>

@@ -7,7 +7,7 @@ import Resume from '../assets/images/resume.jpg';
 
 export default function Projects() {
     return(
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 md:mt-15 md:mb-15 mt-30 mb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:mt-15 md:mb-15 mt-30 mb-10">
             <ProjectCard
                 title={'Server Nexus'}
                 items={['Svelte', 'TailwindCSS', 'DaisyUI', 'Supabase', 'MCStatus API']}
