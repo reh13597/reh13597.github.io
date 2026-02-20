@@ -1,24 +1,25 @@
 import ProjectCard from '../components/ProjectCard';
-import Descent from '../assets/images/descent.JPG';
-import ServerNexus from '../assets/images/servernexus.JPG';
-import GridLock from '../assets/images/gridlock.JPG';
-import Recipedia from '../assets/images/recipedia.JPG';
-import Resume from '../assets/images/resume.jpg';
+import Descent from '../assets/images/projects/descent.JPG';
+import ServerNexus from '../assets/images/projects/servernexus.JPG';
+import GridLock from '../assets/images/projects/gridlock.JPG';
+import Recipedia from '../assets/images/projects/recipedia.JPG';
+import Resume from '../assets/images/projects/resume.jpg';
+import WIP from '../assets/images/projects/wip.jpg';
 
 export default function Projects() {
     return(
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:mt-15 md:mb-15 mt-30 mb-10">
             <ProjectCard
                 title={'Server Nexus'}
-                items={['Svelte', 'TailwindCSS', 'DaisyUI', 'Supabase', 'MCStatus API']}
-                desc={'A website that displays Minecraft server information such as server status, player count, user reviews, and more.'}
+                items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API']}
+                desc={'A full-stack website that displays Minecraft server information such as server status, player count, user reviews, and more.'}
                 link={'https://server-nexus.vercel.app/'}
                 picture={ServerNexus}
                 altText={'Logo of the Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
             />
             <ProjectCard
                 title={'Recipedia'}
-                items={['React', 'TailwindCSS', 'DaisyUI', 'TheMealDB API', 'APINinjas']}
+                items={['React.js', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas']}
                 desc={'A website for finding recipes, nutrition facts, image scanning, and more.'}
                 link={'https://rcpdia.vercel.app/'}
                 picture={Recipedia}
@@ -26,7 +27,7 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'Resume-to-Job Recommender'}
-                items={['Python', 'scikit-learn', 'pandas', 'numPy', 'matplotlib']}
+                items={['Python', 'scikit-learn', 'pandas', 'numPy', 'spaCy', 'matplotlib', 'seaborn']}
                 desc={'An AI pipeline that ranks and matches the top N job postings to a resume.'}
                 link={'https://github.com/reh13597/CMPT310-Resume-Parser'}
                 picture={Resume}
@@ -47,6 +48,22 @@ export default function Projects() {
                 link={'https://devpost.com/software/descent-into-madness'}
                 picture={Descent}
                 altText={'Picture of the Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
+            />
+            <ProjectCard
+                title={'Subscriptions Tracker'}
+                items={['React.ts', 'Tailwind CSS', 'ShadCN UI', 'AWS RDS + Cognito + Amplify']}
+                desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
+                link={'https://guoalex.com'}
+                picture={WIP}
+                altText={'Picture of an under construction sign with capitalized black font, diagonal black stripes across, with a yellow background.'}
+            />
+            <ProjectCard
+                title={'CerebralVision'}
+                items={['PyTorch', 'scikit-learn', 'pandas', 'numPy', 'matplotlib', 'seaborn']}
+                desc={'An AI pipeline that detects the presence of brain tumors in MRI scans.'}
+                link={'https://guoalex.com'}
+                picture={WIP}
+                altText={'Picture of an under construction sign with capitalized black font, diagonal black stripes across, with a yellow background.'}
             />
         </div>
     );

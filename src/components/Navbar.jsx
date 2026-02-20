@@ -54,9 +54,6 @@ export default function Navbar() {
                 <li className="my-2 mx-1">
                     <a href="#alex" className={linkClass1("alex")}>Alex</a>
                 </li>
-                {/* <li className="my-2 mx-1">
-                    <a href="#contact" className={linkClass1("contact")}>Contact</a>
-                </li> */}
 
                 <li className="border-none h-3 bg-transparent"></li>
 
@@ -117,9 +114,6 @@ export default function Navbar() {
                         <a href="#alex" className={linkClass2("alex")}>
                             Alex
                         </a>
-                        {/* <a href="#contact" className={linkClass2("contact")}>
-                            Contact
-                        </a> */}
 
                         <div className="h-6 w-px bg-base-content/20" />
 

@@ -3,7 +3,6 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Alex from './pages/Alex';
-import Contact from './pages/Contact';
 import Particles from './components/Particles';
 
 function App() {
@@ -40,10 +39,6 @@ function App() {
       <section id="alex" className="min-h-screen flex items-start justify-center">
         <Alex />
       </section>
-
-      {/* <section id="contact" className="min-h-screen flex items-center justify-center">
-        <Contact />
-      </section> */}
     </div>
   );
 }
