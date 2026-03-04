@@ -12,7 +12,7 @@ export default function Projects() {
             <ProjectCard
                 title={'Server Nexus'}
                 items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API']}
-                desc={'A full-stack website that displays Minecraft server information such as server status, player count, user reviews, and more.'}
+                desc={'A full-stack website that fetches Minecraft server information.'}
                 link={'https://server-nexus.vercel.app/'}
                 picture={ServerNexus}
                 altText={'Logo of the Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
@@ -51,8 +51,8 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'Subscriptions Tracker'}
-                items={['React.ts', 'Tailwind CSS', 'ShadCN UI', 'AWS RDS + Cognito + Amplify']}
-                desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
+                items={['Next.js', 'Tailwind CSS', 'ShadCN UI', 'AWS Aurora + Cognito + Amplify']}
+                desc={'A full-stack website that lets users track their subscriptions.'}
                 link={'https://guoalex.com'}
                 picture={WIP}
                 altText={'Picture of an under construction sign with capitalized black font, diagonal black stripes across, with a yellow background.'}

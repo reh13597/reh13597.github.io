@@ -57,7 +57,7 @@ export default function Navbar() {
 
                 <li className="border-none h-3 bg-transparent"></li>
 
-                <li className="my-2">
+                {/* <li className="my-2">
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -66,7 +66,7 @@ export default function Navbar() {
                     >
                         <FontAwesomeIcon icon={faInstagram} size="2x" className={iconClass} />
                     </a>
-                </li>
+                </li> */}
                 <li className="my-2">
                     <a
                         target="_blank"
@@ -118,14 +118,14 @@ export default function Navbar() {
                         <div className="h-6 w-px bg-base-content/20" />
 
                         <div className="flex items-center gap-4">
-                            <a
+                            {/* <a
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://instagram.com/alex_guo_888/"
                                 className={iconWrap}
                             >
                                 <FontAwesomeIcon icon={faInstagram} className={iconClass} />
-                            </a>
+                            </a> */}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
