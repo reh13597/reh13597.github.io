@@ -15,7 +15,6 @@ export default function Navbar() {
         ${activeSection === section ? "text-primary" : "text-white"}`;
 
     const iconWrap = "inline-flex w-fit transition duration-200 hover:scale-115 hover:bg-transparent";
-
     const iconClass = "text-white hover:text-primary";
 
     useEffect(() => {
@@ -55,13 +54,10 @@ export default function Navbar() {
                 <li className="my-2 mx-1">
                     <a href="#alex" className={linkClass1("alex")}>Alex</a>
                 </li>
-                {/* <li className="my-2 mx-1">
-                    <a href="#contact" className={linkClass1("contact")}>Contact</a>
-                </li> */}
 
                 <li className="border-none h-3 bg-transparent"></li>
 
-                <li className="my-2">
+                {/* <li className="my-2">
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -70,7 +66,7 @@ export default function Navbar() {
                     >
                         <FontAwesomeIcon icon={faInstagram} size="2x" className={iconClass} />
                     </a>
-                </li>
+                </li> */}
                 <li className="my-2">
                     <a
                         target="_blank"
@@ -85,7 +81,7 @@ export default function Navbar() {
                     <a
                         target="_blank"
                         rel="noreferrer"
-                        href="https://www.linkedin.com/in/alex-guo-3088461ba/"
+                        href="https://www.linkedin.com/in/-alex-guo-/"
                         className={iconWrap}
                     >
                         <FontAwesomeIcon icon={faLinkedin} size="2x" className={iconClass} />
@@ -118,21 +114,18 @@ export default function Navbar() {
                         <a href="#alex" className={linkClass2("alex")}>
                             Alex
                         </a>
-                        {/* <a href="#contact" className={linkClass2("contact")}>
-                            Contact
-                        </a> */}
 
                         <div className="h-6 w-px bg-base-content/20" />
 
                         <div className="flex items-center gap-4">
-                            <a
+                            {/* <a
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://instagram.com/alex_guo_888/"
                                 className={iconWrap}
                             >
                                 <FontAwesomeIcon icon={faInstagram} className={iconClass} />
-                            </a>
+                            </a> */}
                             <a
                                 target="_blank"
                                 rel="noreferrer"
@@ -144,7 +137,7 @@ export default function Navbar() {
                             <a
                                 target="_blank"
                                 rel="noreferrer"
-                                href="https://www.linkedin.com/in/alex-guo-3088461ba/"
+                                href="https://www.linkedin.com/in/-alex-guo-/"
                                 className={iconWrap}
                             >
                                 <FontAwesomeIcon icon={faLinkedin} className={iconClass} />
