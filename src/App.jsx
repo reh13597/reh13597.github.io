@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Alex from './pages/Alex';
@@ -15,7 +15,7 @@ function App() {
           particleSpread={12}
           speed={0.05}
           particleBaseSize={100}
-          /* moveParticlesOnHover */
+          moveParticlesOnHover
           alphaParticles={false}
           disableRotation={false}
           pixelRatio={1}

@@ -18,9 +18,9 @@ export default function SkillsConveyor({ skills = [] }) {
       <div
         className="track"
         ref={trackRef}
-        style={scrollDist ? { '--scroll-dist': `-${scrollDist + 20}px` } : {}}
+        style={scrollDist ? { '--scroll-dist': `-${scrollDist + 32}px` } : {}}
       >
-        <div ref={firstSetRef} className="flex gap-5">
+        <div ref={firstSetRef} className="flex gap-8">
           {skills.map((s, idx) => (
             <FontAwesomeIcon icon={s} size="3x"
               className="text-white hover:text-primary hover:scale-110 transition duration-300 shrink-0"
@@ -28,7 +28,7 @@ export default function SkillsConveyor({ skills = [] }) {
             />
           ))}
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-8">
           {skills.map((s, idx) => (
             <FontAwesomeIcon icon={s} size="3x"
               className="text-white hover:text-primary hover:scale-110 transition duration-300 shrink-0"

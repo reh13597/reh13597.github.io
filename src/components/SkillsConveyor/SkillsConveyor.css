@@ -1,13 +1,14 @@
 .belt {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   width: 50%;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .track {
   display: flex;
-  gap: 20px;
-  animation: scroll 15s linear infinite;
+  gap: 32px;
+  animation: scroll 20s linear infinite;
 }
 
 .belt:hover .track {
