@@ -1,10 +1,10 @@
 import Conveyor from '../components/SkillsConveyor';
-import { faJs, faPython, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faAws, faLinux, faDocker, faGitAlt, faPostgresql, faTailwindCss, faSvelte, faReact, faJs, faTypescript, faPython, faJava, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
 
 export default function Skills() {
     return(
-        <div className="flex justify-center">
-            <Conveyor skills={[faJs, faPython, faHtml5, faCss3]}/>
+        <div className="flex justify-center overflow-x-hidden w-full">
+            <Conveyor skills={[faAws, faLinux, faDocker, faGitAlt, faPostgresql, faTailwindCss, faSvelte, faReact, faJs, faPython, faJava, faTypescript, faHtml5, faCss3]}/>
         </div>
     )
 }

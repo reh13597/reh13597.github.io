@@ -50,7 +50,7 @@ export default function Projects() {
                 altText={'Picture of the Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
             />
             <ProjectCard
-                title={'Subscriptions Tracker'}
+                title={'SubTrak'}
                 items={['React.ts', 'Tailwind CSS', 'ShadCN UI', 'AWS RDS + Cognito + Amplify']}
                 desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
                 link={'https://guoalex.com'}
