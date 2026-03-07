@@ -12,7 +12,7 @@ export default function Projects() {
             <ProjectCard
                 title={'Server Nexus'}
                 items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API']}
-                desc={'A full-stack website that displays Minecraft server information such as server status, player count, user reviews, and more.'}
+                desc={'A full-stack website that fetches Minecraft server information.'}
                 link={'https://server-nexus.vercel.app/'}
                 picture={ServerNexus}
                 altText={'Logo of the Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
