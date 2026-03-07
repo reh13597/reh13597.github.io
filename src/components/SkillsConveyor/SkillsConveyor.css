@@ -2,6 +2,7 @@
   overflow-x: hidden;
   overflow-y: visible;
   width: 50%;
+  padding-block: 20px;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
@@ -19,3 +20,5 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(var(--scroll-dist)); }
 }
+
+

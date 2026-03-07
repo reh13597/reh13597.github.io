@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import Skills from './pages/Skills/Skills';
 import Alex from './pages/Alex';
 import Particles from './components/Particles';
 

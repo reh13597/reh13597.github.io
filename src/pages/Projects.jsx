@@ -51,7 +51,7 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'SubTrak'}
-                items={['Next.js', 'Tailwind CSS', 'ShadCN UI', 'AWS RDS + Cognito + Amplify']}
+                items={['Next.js', 'Tailwind CSS', 'ShadCN UI', 'MySQL', 'AWS RDS + Cognito + Amplify']}
                 desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
                 link={'https://guoalex.com'}
                 picture={WIP}
