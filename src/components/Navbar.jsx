@@ -57,7 +57,7 @@ export default function Navbar() {
 
                 <li className="border-none h-3 bg-transparent"></li>
 
-                {/* <li className="my-2">
+                <li className="my-2">
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -108,7 +108,7 @@ export default function Navbar() {
                         <div className="h-6 w-px bg-base-content/20" />
 
                         <div className="flex items-center gap-4">
-                            {/* <a
+                            <a
                                 target="_blank"
                                 rel="noreferrer"
                                 href="https://github.com/reh13597"
