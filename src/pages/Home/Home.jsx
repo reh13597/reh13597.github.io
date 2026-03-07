@@ -3,30 +3,30 @@ import './Home.css';
 export default function Home() {
     return(
         <div className="flex justify-center px-10 select-none transition duration-200 hover:scale-103">
-            <div className="mockup-code bg-base-200 max-w-3xl border-2 border-neutral hover:border-primary hover:border-1">
-                <pre data-prefix="$" className="bg-primary text-black md:text-2xl lg:text-3xl">
-                    <code className="md:-mx-1 lg:-mx-2">Hi, I'm Alex Guo!</code>
+            <div className="mockup-code w-full max-w-lg lg:min-w-2xl bg-base-200 border-2 border-neutral hover:border-primary hover:border-1">
+                <pre data-prefix="$" className="bg-primary text-black text-md md:text-xl lg:text-3xl">
+                    <code className="lg:-mx-2">Hi, I'm Alex Guo!</code>
                 </pre>
-                <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
+                <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
                     <code>Third year CS student @ SFU 🍁</code>
                 </pre>
-                <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
+                <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
                     <code>
                         <span>
                             I am passionate about
                             <span className="text-rotate [--items:5] [--duration:20000ms]">
                                 <span>
-                                    <span className="px-3">Full-Stack Development 💻</span>
+                                    <span className="px-3">Full-Stack 💻</span>
                                     <span className="px-3">AI/ML 🤖</span>
                                     <span className="px-3">DevOps 🚀</span>
                                     <span className="px-3">QA 🔍</span>
-                                    <span className="px-3">Data Networking 🌐</span>
+                                    <span className="px-3">Networking 🌐</span>
                                 </span>
                             </span>
                         </span>
                     </code>
                 </pre>
-                <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl">
+                <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
                     <code>
                         <span>
                             I go crazy for
@@ -43,7 +43,7 @@ export default function Home() {
                         </span>
                     </code>
                 </pre>
-                <pre data-prefix=">" className="sm:text-md md:text-xl lg:text-2xl"><code className="-mx-1 animate-caret">|</code></pre>
+                <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl"><code className="-mx-1 animate-caret">|</code></pre>
                 <pre></pre>
                 <pre></pre>
             </div>
