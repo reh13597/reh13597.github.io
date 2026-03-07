@@ -1,3 +1,5 @@
+import './Home.css';
+
 export default function Home() {
     return(
         <div className="flex justify-center px-10 select-none transition duration-200 hover:scale-103">

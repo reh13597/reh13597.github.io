@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import Skills from './pages/Skills/Skills';
 import Alex from './pages/Alex';
 import Particles from './components/Particles';
 
@@ -15,7 +15,7 @@ function App() {
           particleSpread={12}
           speed={0.05}
           particleBaseSize={100}
-          /* moveParticlesOnHover */
+          moveParticlesOnHover
           alphaParticles={false}
           disableRotation={false}
           pixelRatio={1}
@@ -32,9 +32,9 @@ function App() {
         <Projects />
       </section>
 
-      {/* <section id="skills" className="min-h-screen flex items-center justify-center">
+      <section id="skills" className="min-h-screen flex items-center justify-center">
         <Skills />
-      </section> */}
+      </section>
 
       <section id="alex" className="min-h-screen flex items-start justify-center">
         <Alex />
