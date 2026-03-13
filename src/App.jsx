@@ -54,7 +54,7 @@ function App() {
         />
       </div>
 
-      <div className="fixed top-24 left-1/2 -translate-x-1/2 z-[60] w-fit pointer-events-none">
+      <div className="fixed top-20 md:top-22 left-1/2 -translate-x-1/2 z-[60] w-fit pointer-events-none">
         <div className="pointer-events-auto">
           <NowPlayingSpotify />
         </div>
