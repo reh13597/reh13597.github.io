@@ -41,7 +41,7 @@ export default function Navbar() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.2 }}
             className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-fit max-w-[95%]"
-        >            <div className="bg-base-200/80 backdrop-blur-md rounded-2xl px-6 py-3 shadow-2xl shadow-primary/20 hover:shadow-primary/30 border border-neutral hover:border-primary/50 transition-all duration-300">
+        >            <div className="bg-base-200/80 backdrop-blur-md rounded-2xl px-6 py-3 shadow-2xl shadow-primary/10 hover:shadow-primary/20 border border-neutral hover:border-primary/50 transition-all duration-300">
                 <div className="flex items-center gap-3 md:gap-6 lg:gap-10">
                     <div className="flex items-center gap-3 md:gap-5 lg:gap-8">
                         <a href="#home" className={linkClass2("home")}>Home</a>
