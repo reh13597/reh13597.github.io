@@ -120,7 +120,7 @@ const NowPlayingSpotify = () => {
               href={song.songUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col gap-2 px-4 py-3 bg-base-200/50 backdrop-blur-md border border-neutral rounded-2xl hover:border-primary/50 transition-all duration-300 shadow-2xl shadow-primary/20 hover:shadow-primary/30 w-full"
+              className="group flex flex-col gap-2 px-4 py-3 bg-base-200/50 backdrop-blur-md border border-neutral rounded-2xl hover:border-primary/50 transition-all duration-300 shadow-2xl shadow-primary/10 hover:shadow-primary/20 w-full"
             >
               {/* Top row: album art + song info */}
               <span className="text-xs text-white/80">I'm currently listening to:</span>

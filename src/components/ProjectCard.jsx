@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 export default function ProjectCard({ title, items = [], desc, link, picture, altText }) {
    return(
-        <div 
-            className="card card-sm max-w-xs lg:max-w-sm bg-base-100/40 backdrop-blur-sm border-3 border-neutral hover:border-primary hover:border-2 select-none transition-all duration-300 hover:scale-102 shadow-2xl shadow-primary/10 hover:shadow-xl hover:shadow-primary/20"
+        <div
+            className="card card-sm max-w-xs lg:max-w-sm bg-base-100/40 backdrop-blur-sm border-3 border-neutral hover:border-primary hover:border-2 select-none transition-all duration-300 hover:scale-102 shadow-2xl shadow-primary/15 hover:shadow-xl hover:shadow-primary/20"
         >
             <figure className="overflow-hidden">
                 <motion.img

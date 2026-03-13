@@ -35,7 +35,7 @@ export default function Alex() {
                         key={index}
                         src={item.img}
                         alt="Alex"
-                        className="w-full h-auto break-inside-avoid rounded-2xl border-4 border-neutral hover:border-primary hover:border-3 transition duration-200 hover:scale-102 shadow-2xl shadow-primary/30 hover:shadow-primary/40"
+                        className="w-full h-auto break-inside-avoid rounded-2xl border-4 border-neutral hover:border-primary hover:border-3 transition duration-200 hover:scale-102 shadow-2xl shadow-primary/25 hover:shadow-primary/30"
                     />
                 ))}
             </div>
