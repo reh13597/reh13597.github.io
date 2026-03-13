@@ -1,29 +1,47 @@
 import ProjectCard from '../components/ProjectCard';
 import Descent from '../assets/images/projects/descent.JPG';
-import ServerNexus from '../assets/images/projects/servernexus.JPG';
 import GridLock from '../assets/images/projects/gridlock.JPG';
-import Recipedia from '../assets/images/projects/recipedia.JPG';
 import Resume from '../assets/images/projects/resume.jpg';
+import MRI from '../assets/images/projects/mri.webp';
+import Subscriptions from '../assets/images/projects/subscriptions.jpg';
+import MCServers from '../assets/images/projects/mcserver.webp';
+import RecipeBook from '../assets/images/projects/recipebook.jpg';
 import WIP from '../assets/images/projects/wip.jpg';
 
 export default function Projects() {
     return(
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:mt-15 md:mb-15 mt-30 mb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mt-70 mb-10">
             <ProjectCard
                 title={'Server Nexus'}
                 items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API']}
-                desc={'A full-stack website that fetches Minecraft server information.'}
+                desc={'A full-stack website that lets users fetch Minecraft server information and leave ratings/reviews.'}
                 link={'https://server-nexus.vercel.app/'}
-                picture={ServerNexus}
-                altText={'Logo of the Server Nexus website depicting a computer network with one big white circle in the middle, and 6 smaller white circles connecting to it, featured on a gray background with a light shadow.'}
+                picture={MCServers}
+                altText={'Screenshot of an in-game UI showing a Minecraft server list with multiple servers like Hypixel and Mineplex.'}
+            />
+            <ProjectCard
+                title={'SubTrak'}
+                items={['Next.js + API Routes', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Google Gemini API', 'AWS RDS (MySQL) + Cognito + JWT + Amplify', ]}
+                desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
+                link={'https://main.d3vzykb0ipd68k.amplifyapp.com/'}
+                picture={Subscriptions}
+                altText={'Picture of multiple subscription cards featuring popular subscriptions like Netflix and Amazon Prime.'}
             />
             <ProjectCard
                 title={'Recipedia'}
                 items={['React.js', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas']}
-                desc={'A website for finding recipes, nutrition facts, image scanning, and more.'}
+                desc={'A website for finding recipes and scanning images for nutritional information.'}
                 link={'https://rcpdia.vercel.app/'}
-                picture={Recipedia}
-                altText={'Logo of the Recipedia website depicting an orange cookbook with a white chefs hat on the cover, situated on a white background.'}
+                picture={RecipeBook}
+                altText={'Picture of a recipe for Spicy Vodka Rigatoni with drawings of ingredients and real peppers scattered on top.'}
+            />
+            <ProjectCard
+                title={'CerebralVision'}
+                items={['PyTorch', 'scikit-learn', 'pandas', 'numPy', 'matplotlib', 'seaborn']}
+                desc={'An AI pipeline that detects the presence of brain tumors in MRI scans.'}
+                link={'https://github.com/sfu-cmpt419/2026_1_project_01'}
+                picture={MRI}
+                altText={'Picture of 2 MRI scans of a brain.'}
             />
             <ProjectCard
                 title={'Resume-to-Job Recommender'}
@@ -48,22 +66,6 @@ export default function Projects() {
                 link={'https://devpost.com/software/descent-into-madness'}
                 picture={Descent}
                 altText={'Picture of the Descent Into Madness Roblox Game depicting a crazed person drawn by black scribbles, featured on a red background.'}
-            />
-            <ProjectCard
-                title={'Subscriptions Tracker'}
-                items={['Next.js', 'Tailwind CSS', 'ShadCN UI', 'AWS Aurora + Cognito + Amplify']}
-                desc={'A full-stack website that lets users track their subscriptions.'}
-                link={'https://guoalex.com'}
-                picture={WIP}
-                altText={'Picture of an under construction sign with capitalized black font, diagonal black stripes across, with a yellow background.'}
-            />
-            <ProjectCard
-                title={'CerebralVision'}
-                items={['PyTorch', 'scikit-learn', 'pandas', 'numPy', 'matplotlib', 'seaborn']}
-                desc={'An AI pipeline that detects the presence of brain tumors in MRI scans.'}
-                link={'https://guoalex.com'}
-                picture={WIP}
-                altText={'Picture of an under construction sign with capitalized black font, diagonal black stripes across, with a yellow background.'}
             />
         </div>
     );
