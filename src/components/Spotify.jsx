@@ -120,16 +120,16 @@ const NowPlayingSpotify = () => {
               href={song.songUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col gap-2 px-4 py-3 bg-base-200/50 backdrop-blur-md border border-neutral rounded-2xl hover:border-primary/50 transition-all duration-300 shadow-2xl shadow-primary/10 hover:shadow-primary/20 w-full"
+              className="group flex flex-col gap-2 px-4 py-3 bg-base-200/10 backdrop-blur-xs border border-neutral rounded-2xl hover:border-primary/80 transition-all duration-300 shadow-2xl shadow-primary/10 hover:shadow-primary/20 w-full"
             >
               {/* Top row: album art + song info */}
-              <span className="text-xs text-white/80">I'm currently listening to:</span>
+              <span className="text-[9px] md:text-[10px] text-white/60">I'm currently listening to:</span>
               <div className="flex items-center gap-3">
                 <div className="relative flex-shrink-0">
                   <img
                     src={song.albumArt}
                     alt="Album Art"
-                    className="w-8 h-8 md:w-10 md:h-10 rounded-xl animate-spin-slow group-hover:animate-pause shadow-lg"
+                    className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-lg"
                   />
                   <div className="absolute -bottom-1 -right-1 bg-base-300 rounded-full w-5 h-5 flex items-center justify-center border border-white/10 shadow-lg">
                     <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-xs" />
@@ -137,10 +137,10 @@ const NowPlayingSpotify = () => {
                 </div>
 
                 <div className="flex flex-col min-w-0 pr-1 flex-1">
-                  <p className="text-xs md:text-sm font-bold text-white truncate group-hover:text-primary transition-colors max-w-[150px] md:max-w-[250px]">
+                  <p className="text-[10px] md:text-[11px] font-bold text-white/80 truncate group-hover:text-primary transition-colors max-w-[150px] lg:max-w-[90px] xl:max-w-[150px]">
                     {song.title}
                   </p>
-                  <p className="text-[10px] md:text-[11px] text-white/60 truncate -mt-0.5">
+                  <p className="text-[9px] md:text-[10px] text-white/60 truncate -mt-0.5">
                     {song.artist}
                   </p>
                 </div>
@@ -171,9 +171,9 @@ const NowPlayingSpotify = () => {
             exit={{ opacity: 0, y: -20 }}
             className="flex flex-col items-center gap-1.5"
           >
-            <div className="flex items-center gap-2 px-4 py-2 bg-base-200/50 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl shadow-primary/10">
-              <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-lg" />
-              <p className="text-[11px] font-bold text-white/60">Not listening to a song right now.</p>
+            <div className="flex items-center gap-2 px-4 py-2 bg-base-200/10 backdrop-blur-xs border border-neutral rounded-2xl shadow-2xl shadow-primary/20">
+              <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-md md:text-lg" />
+              <p className="text-[9px] md:text-[10px] text-white/60 max-w-[80px] md:max-w-[100px]">Not listening to a song right now.</p>
             </div>
           </motion.div>
         )}

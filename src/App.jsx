@@ -55,15 +55,15 @@ function App() {
         />
       </div>
 
-      {/* xl+ : fixed top-right corner */}
-      <div className="hidden xl:block fixed top-4 right-4 z-[60] w-fit pointer-events-none">
+      {/* lg+ : fixed top-right corner */}
+      <div className="hidden lg:block fixed top-5 right-5 z-[60] w-fit pointer-events-none">
         <div className="pointer-events-auto">
           <NowPlayingSpotify />
         </div>
       </div>
 
       {/* mobile : centered below navbar */}
-      <div className="xl:hidden fixed top-20 left-1/2 -translate-x-1/2 z-[60] w-fit pointer-events-none">
+      <div className="lg:hidden fixed bottom-5 right-5 z-[60] w-fit pointer-events-none">
         <div className="pointer-events-auto">
           <NowPlayingSpotify />
         </div>
