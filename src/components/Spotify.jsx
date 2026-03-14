@@ -137,10 +137,10 @@ const NowPlayingSpotify = () => {
                 </div>
 
                 <div className="flex flex-col min-w-0 pr-1 flex-1">
-                  <p className="text-[10px] md:text-[11px] font-bold text-white/80 truncate group-hover:text-primary transition-colors max-w-[150px] lg:max-w-[90px] xl:max-w-[150px]">
+                  <p className="text-[10px] md:text-[11px] font-bold text-white/80 truncate group-hover:text-primary transition-colors max-w-[100px] lg:max-w-[90px] xl:max-w-[150px]">
                     {song.title}
                   </p>
-                  <p className="text-[9px] md:text-[10px] text-white/60 truncate -mt-0.5">
+                  <p className="text-[9px] md:text-[10px] text-white/60 truncate -mt-0.5 max-w-[100px] lg:max-w-[90px] xl:max-w-[150px]">
                     {song.artist}
                   </p>
                 </div>

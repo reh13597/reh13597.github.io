@@ -28,8 +28,8 @@ export default function Alex() {
     ];
 
     return(
-        <div className="w-full max-w-6xl mx-auto mt-70 px-5 md:px-20 mb-10">
-            <div className="columns-2 xl:columns-3 gap-2 sm:gap-4 space-y-3">
+        <div className="w-full max-w-6xl mx-auto mt-40 px-15 md:px-25 mb-10">
+            <div className="columns-2 lg:columns-3 gap-2 sm:gap-4 space-y-3">
                 {galleryItems.map((item, index) => (
                     <img
                         key={index}

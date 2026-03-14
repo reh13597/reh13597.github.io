@@ -3,6 +3,5 @@
     radial-gradient(ellipse 20% 70% at 35% center, var(--color-neutral) 10%, transparent 100%),
     radial-gradient(ellipse 20% 70% at 65% center, var(--color-neutral) 10%, transparent 100%),
     radial-gradient(ellipse 35% 70% at center, var(--color-neutral) 10%, transparent 80%);
-  width: 100vw;
   padding: 1.5rem 0;
 }

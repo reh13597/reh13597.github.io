@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills/Skills';
@@ -117,12 +118,7 @@ function App() {
         </motion.section>
       </motion.main>
 
-      <footer className="w-full py-10 px-5 flex flex-col items-center gap-4 snap-start">
-        <div className="w-full max-w-4xl h-px bg-white/40" />
-        <p className="text-white/50 text-xs md:text-sm text-center">
-          &copy; {new Date().getFullYear()} Alex Guo. All Rights Reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
