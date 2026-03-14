@@ -10,12 +10,16 @@ export default function SkillsConveyor({ skills = [], labels = {} }) {
   const getLabel = (icon) => labels[icon.iconName] ?? icon.iconName;
 
   useEffect(() => {
-    if (!firstSetRef.current) {
-      return;
-    }
+    const updateWidth = () => {
+      if (firstSetRef.current) {
+        const width = firstSetRef.current.getBoundingClientRect().width;
+        setScrollDist(width);
+      }
+    };
 
-    const width = firstSetRef.current.getBoundingClientRect().width;
-    setScrollDist(width);
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
   }, [skills]);
 
   const SkillIcon = ({ s, idx, prefix }) => (
@@ -27,15 +31,14 @@ export default function SkillsConveyor({ skills = [], labels = {} }) {
       >
         <FontAwesomeIcon
           icon={s}
-          size="3x"
-          className="text-white hover:text-primary transition-colors duration-300 shrink-0"
+          className="text-white hover:text-primary transition-colors duration-300 shrink-0 text-3xl md:text-5xl lg:text-6xl"
         />
       </motion.div>
     </div>
   );
 
   return (
-    <div className="belt" aria-label="Tech skills">
+    <div className="belt p-3 md:p-5 lg:p-7 bg-base-100 border-2 border-neutral hover:border-primary/80 rounded-4xl transition-all duration-300 shadow-2xl shadow-primary/30 hover:shadow-primary/50" aria-label="Tech skills">
       <div
         className="track"
         ref={trackRef}

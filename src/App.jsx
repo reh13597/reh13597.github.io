@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Skills from './pages/Skills/Skills';
+import Skills from './pages/Skills';
 import Alex from './pages/Alex';
 import Particles from './components/Particles';
 import NowPlayingSpotify from './components/Spotify';
@@ -73,49 +73,65 @@ function App() {
       <Navbar />
 
       <motion.main className="w-full">
-        <motion.section
+        <section
           id="home"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
-          variants={sectionVariants}
           className="min-h-screen flex items-center justify-center snap-start"
         >
-          <Home />
-        </motion.section>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.1 }}
+            variants={sectionVariants}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <Home />
+          </motion.div>
+        </section>
 
-        <motion.section
+        <section
           id="projects"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
-          variants={sectionVariants}
           className="min-h-screen flex items-center justify-center snap-start"
         >
-          <Projects />
-        </motion.section>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.1 }}
+            variants={sectionVariants}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <Projects />
+          </motion.div>
+        </section>
 
-        <motion.section
+        <section
           id="skills"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
-          variants={sectionVariants}
           className="min-h-screen flex items-center justify-center snap-start"
         >
-          <Skills />
-        </motion.section>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.1 }}
+            variants={sectionVariants}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <Skills />
+          </motion.div>
+        </section>
 
-        <motion.section
+        <section
           id="alex"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.1 }}
-          variants={sectionVariants}
           className="min-h-screen flex items-start justify-center snap-start"
         >
-          <Alex />
-        </motion.section>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.1 }}
+            variants={sectionVariants}
+            className="w-full h-full flex items-start justify-center"
+          >
+            <Alex />
+          </motion.div>
+        </section>
       </motion.main>
 
       <Footer />

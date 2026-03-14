@@ -120,7 +120,7 @@ const NowPlayingSpotify = () => {
               href={song.songUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col gap-2 px-4 py-3 bg-base-200/10 backdrop-blur-xs border border-neutral rounded-2xl hover:border-primary/80 transition-all duration-300 shadow-2xl shadow-primary/10 hover:shadow-primary/20 w-full"
+              className="group flex flex-col gap-2 px-4 py-3 bg-base-100/50 backdrop-blur-xs border border-neutral rounded-2xl hover:border-primary/50 transition-all duration-300 shadow-2xl shadow-primary/10 hover:shadow-primary/20 w-full"
             >
               {/* Top row: album art + song info */}
               <span className="text-[9px] md:text-[10px] text-white/60">I'm currently listening to:</span>
@@ -171,7 +171,7 @@ const NowPlayingSpotify = () => {
             exit={{ opacity: 0, y: -20 }}
             className="flex flex-col items-center gap-1.5"
           >
-            <div className="flex items-center gap-2 px-4 py-2 bg-base-200/10 backdrop-blur-xs border border-neutral rounded-2xl shadow-2xl shadow-primary/20">
+            <div className="flex items-center gap-2 px-4 py-2 bg-base-100/50 backdrop-blur-xs border border-neutral hover:border-primary/50 rounded-2xl shadow-2xl shadow-primary/20">
               <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-md md:text-lg" />
               <p className="text-[9px] md:text-[10px] text-white/60 max-w-[80px] md:max-w-[100px]">Not listening to a song right now.</p>
             </div>

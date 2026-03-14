@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function ProjectCard({ title, items = [], desc, link, picture, altText }) {
    return(
         <div
-            className="card card-sm max-w-xs lg:max-w-sm bg-base-100/40 backdrop-blur-sm border-3 border-neutral hover:border-primary hover:border-2 select-none transition-all duration-300 hover:scale-102 shadow-2xl shadow-primary/15 hover:shadow-xl hover:shadow-primary/20"
+            className="card card-sm max-w-xs lg:max-w-sm bg-base-100 backdrop-blur-sm border-3 border-neutral hover:border-primary/80 hover:border-2 select-none transition-all duration-300 hover:scale-102 shadow-2xl shadow-primary/15 hover:shadow-xl hover:shadow-primary/20"
         >
             <figure className="overflow-hidden">
                 <motion.img
@@ -32,7 +32,7 @@ export default function ProjectCard({ title, items = [], desc, link, picture, al
                         {items.map((item, idx) => (
                             <div
                                 key={idx}
-                                className="lg:text-md md:text-sm sm:text-xs text-xs badge badge-neutral hover:badge-primary transition-colors cursor-default select-none">
+                                className="md:text-xs text-[10px] badge badge-neutral hover:badge-primary transition-colors duration-300 cursor-default select-none">
                                 {item}
                             </div>
                         ))}

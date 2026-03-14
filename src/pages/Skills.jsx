@@ -1,5 +1,4 @@
-import Conveyor from '../../components/SkillsConveyor/SkillsConveyor';
-import './Skills.css';
+import Conveyor from '../components/SkillsConveyor/SkillsConveyor';
 import { faVim, faClaude, faAtlassian, faGithub, faAws, faLinux, faDocker, faGitAlt, faPostgresql, faTailwindCss, faSvelte, faReact, faJs, faTypescript, faPython, faJava, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
 
 const skillLabels = {
