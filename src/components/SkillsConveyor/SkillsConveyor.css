@@ -3,13 +3,12 @@
   overflow-y: visible;
   width: 100%;
   position: relative;
-  z-index: 10;
 }
 
 .track {
   display: flex;
   gap: 48px;
-  animation: scroll 30s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
 .belt:hover .track {

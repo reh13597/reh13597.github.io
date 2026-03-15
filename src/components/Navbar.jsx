@@ -53,13 +53,13 @@ export default function Navbar() {
                     <div className="h-4 md:h-6 w-px bg-white/50" />
 
                     <div className="flex items-center gap-3 md:gap-5 lg:gap-8">
-                        <motion.a whileHover={{ scale: 1.2, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }} target="_blank" rel="noreferrer" href="https://github.com/reh13597" className={iconWrap}>
+                        <motion.a whileHover={{ scale: 1.1, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }} target="_blank" rel="noreferrer" href="https://github.com/reh13597" className={iconWrap}>
                             <FontAwesomeIcon icon={faGithub} className={`${iconClass} text-md md:text-xl lg:text-2xl`} />
                         </motion.a>
-                        <motion.a whileHover={{ scale: 1.2, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/-alex-guo-/" className={iconWrap}>
+                        <motion.a whileHover={{ scale: 1.1, rotate: 5 }} transition={{ type: "spring", stiffness: 300 }} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/-alex-guo-/" className={iconWrap}>
                             <FontAwesomeIcon icon={faLinkedin} className={`${iconClass} text-md md:text-xl lg:text-2xl`} />
                         </motion.a>
-                        <motion.a whileHover={{ scale: 1.2, rotate: 5}} transition={{ type: "spring", stiffness: 300 }} rel="noreferrer" href="mailto:alg17@sfu.ca" className={iconWrap}>
+                        <motion.a whileHover={{ scale: 1.1, rotate: 5}} transition={{ type: "spring", stiffness: 300 }} rel="noreferrer" href="mailto:alg17@sfu.ca" className={iconWrap}>
                             <FontAwesomeIcon icon={faEnvelope} className={`${iconClass} text-md md:text-xl lg:text-2xl`} />
                         </motion.a>
                     </div>
