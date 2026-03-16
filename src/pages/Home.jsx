@@ -2,8 +2,8 @@ export default function Home() {
     return(
         <div className="flex justify-center px-4 md:px-10 select-none transition duration-200 hover:scale-103">
             <div className="mockup-code w-full max-w-lg lg:min-w-2xl bg-base-100 backdrop-blur-md border-2 border-neutral hover:border-primary hover:border-1 shadow-2xl shadow-primary/10 hover:shadow-primary/20 transition-all duration-300">
-                <pre data-prefix="$" className="bg-neutral text-white hover:bg-primary hover:text-black transition-colors text-md md:text-xl lg:text-2xl">
-                    <code>Hi, I'm Alex Guo!</code>
+                <pre data-prefix="$" className="bg-neutral text-white hover:bg-primary hover:text-black transition-colors duration-300 text-md md:text-xl lg:text-2xl">
+                    <code>Hi 👋, I'm Alex Guo!</code>
                 </pre>
                 <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
                     <code>Third year CS student @ SFU 🍁</code>
