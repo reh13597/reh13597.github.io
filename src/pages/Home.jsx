@@ -16,7 +16,7 @@ export default function Home() {
                                 <span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Full-Stack 💻</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">AI/ML 🤖</span>
-                                    <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">DevOps 🚀</span>
+                                    <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">DevOps 🔁</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">QA 🔍</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Networking 🌐</span>
                                 </span>
