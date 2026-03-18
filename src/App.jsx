@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Alex from './pages/Alex';
@@ -87,6 +88,21 @@ function App() {
             <Home />
           </motion.div>
         </section>
+
+        {/* <section
+          id="experience"
+          className="min-h-screen flex items-center justify-center snap-start"
+        >
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.1 }}
+            variants={sectionVariants}
+            className="w-full h-full flex items-center justify-center"
+          >
+            <Experience />
+          </motion.div>
+        </section> */}
 
         <section
           id="projects"

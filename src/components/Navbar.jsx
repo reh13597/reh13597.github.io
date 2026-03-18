@@ -45,6 +45,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-3 md:gap-6 lg:gap-10">
                     <div className="flex items-center gap-3 md:gap-5 lg:gap-8">
                         <a href="#home" className={linkClass2("home")}>Home</a>
+                        {/* <a href="#experience" className={linkClass2("experience")}>Experience</a> */}
                         <a href="#projects" className={linkClass2("projects")}>Projects</a>
                         <a href="#skills" className={linkClass2("skills")}>Skills</a>
                         <a href="#alex" className={linkClass2("alex")}>Alex</a>
