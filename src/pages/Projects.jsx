@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mt-40 mb-10">
             <ProjectCard
                 title={'Server Nexus'}
-                items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API']}
+                items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API', 'EmailJS']}
                 desc={'A full-stack website that lets users fetch Minecraft server information and leave ratings/reviews.'}
                 link={'https://server-nexus.vercel.app/'}
                 picture={MCServers}
@@ -29,7 +29,7 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'Recipedia'}
-                items={['React', 'JavaScript', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas', 'GitHub Actions']}
+                items={['React', 'JavaScript', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas', 'GitHub Actions', 'EmailJS']}
                 desc={'A website for finding recipes and scanning images for nutritional information.'}
                 link={'https://rcpdia.vercel.app/'}
                 picture={RecipeBook}
