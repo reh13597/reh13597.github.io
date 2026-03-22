@@ -29,7 +29,7 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'Recipedia'}
-                items={['React', 'JavaScript', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas']}
+                items={['React', 'JavaScript', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas', 'GitHub Actions']}
                 desc={'A website for finding recipes and scanning images for nutritional information.'}
                 link={'https://rcpdia.vercel.app/'}
                 picture={RecipeBook}
