@@ -21,7 +21,7 @@ export default function Projects() {
             />
             <ProjectCard
                 title={'SubTrak'}
-                items={['Next.js + API Routes', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Google Gemini API', 'AWS RDS (MySQL) + S3', 'AWS Cognito + Lambda + Amplify']}
+                items={['Next.js + API Routes', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Google Gemini API', 'AWS RDS (MySQL) + S3', 'AWS Cognito + Lambda', 'AWS Amplify']}
                 desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
                 link={'https://main.d3vzykb0ipd68k.amplifyapp.com/'}
                 picture={Subscriptions}
