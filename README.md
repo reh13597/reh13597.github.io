@@ -6,7 +6,7 @@ Welcome to my fully responsive portfolio website that displays my programming pr
 
 | **Front-End** | **Deployment** | **API** |
 | :--------: | :--------: | :--------: |
-| React, JavaScript <br> Tailwind CSS, Daisy UI, Motion | Vercel | Spotify Web Playback SDK |
+| React, JavaScript, <br> Tailwind CSS, <br> Daisy UI, Motion | Vercel | Spotify Web Playback SDK |
 
 
 
