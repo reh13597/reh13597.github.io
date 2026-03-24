@@ -15,7 +15,7 @@ export default function Projects() {
                 title={'Server Nexus'}
                 items={['Svelte', 'TypeScript', 'Tailwind CSS', 'Daisy UI', 'Supabase', 'MCStatus API', 'EmailJS']}
                 desc={'A full-stack website that lets users fetch Minecraft server information and leave ratings/reviews.'}
-                link={'https://server-nexus.vercel.app/'}
+                link={'https://github.com/reh13597/ServerNexus'}
                 picture={MCServers}
                 altText={'Screenshot of an in-game UI showing a Minecraft server list with multiple servers like Hypixel and Mineplex.'}
             />
@@ -23,7 +23,7 @@ export default function Projects() {
                 title={'SubTrak'}
                 items={['Next.js + API Routes', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Google Gemini API', 'AWS Amplify', 'AWS RDS (MySQL) + S3', 'AWS Cognito + Lambda']}
                 desc={'A full-stack website that lets users track their subscriptions, spending, and under/over-utilized services.'}
-                link={'https://main.d3vzykb0ipd68k.amplifyapp.com/'}
+                link={'https://github.com/reh13597/subtrak'}
                 picture={Subscriptions}
                 altText={'Picture of multiple subscription cards featuring popular subscriptions like Netflix and Amazon Prime.'}
             />
@@ -31,7 +31,7 @@ export default function Projects() {
                 title={'Recipedia'}
                 items={['React', 'JavaScript', 'Tailwind CSS', 'Daisy UI', 'TheMealDB API', 'APINinjas', 'GitHub Actions', 'EmailJS']}
                 desc={'A website for finding recipes and scanning images for nutritional information.'}
-                link={'https://rcpdia.vercel.app/'}
+                link={'https://github.com/reh13597/recipedia'}
                 picture={RecipeBook}
                 altText={'Picture of a recipe for Spicy Vodka Rigatoni with drawings of ingredients and real peppers scattered on top.'}
             />
