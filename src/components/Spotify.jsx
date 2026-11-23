@@ -3,50 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 
-const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
-const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
-const client_id = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
-const client_secret = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
-const refresh_token = import.meta.env.VITE_SPOTIFY_REFRESH_TOKEN;
+// Served by the Vercel Function in api/now-playing.js, which keeps the Spotify secrets server-side
+const NOW_PLAYING_ENDPOINT = '/api/now-playing';
 
-const getAccessToken = async () => {
-  const basic = btoa(`${client_id}:${client_secret}`);
-  const response = await fetch(TOKEN_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      Authorization: `Basic ${basic}`,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token,
-    }),
-  });
-  return response.json();
-};
+const POLL_INTERVAL_MS = 10000;
 
+// Resolves to song data, or null when nothing is playing. Throws on auth/network errors.
 const getNowPlaying = async () => {
-  try {
-    const { access_token } = await getAccessToken();
-    const response = await fetch(NOW_PLAYING_ENDPOINT, {
-      headers: { Authorization: `Bearer ${access_token}` },
-    });
-    if (response.status === 204 || response.status > 400) return null;
-    const song = await response.json();
-    if (!song || !song.item) return null;
-    return {
-      title: song.item.name,
-      artist: song.item.artists.map(a => a.name).join(', '),
-      albumArt: song.item.album.images[0].url,
-      songUrl: song.item.external_urls.spotify,
-      isPlaying: song.is_playing,
-      progress: song.progress_ms,
-      duration: song.item.duration_ms,
-    };
-  } catch (error) {
-    console.error("Error fetching Spotify data:", error);
-    return null;
-  }
+  const response = await fetch(NOW_PLAYING_ENDPOINT);
+  if (!response.ok) throw new Error(`Now-playing request failed: ${response.status}`);
+  const { song } = await response.json();
+  return song;
 };
 
 const formatMs = (ms) => {
@@ -57,46 +24,62 @@ const formatMs = (ms) => {
 };
 
 const NowPlayingSpotify = () => {
+  // 'loading' until the first request settles, so "not listening" never flashes before the real answer
+  const [status, setStatus] = useState('loading'); // 'loading' | 'playing' | 'idle' | 'error'
   const [song, setSong] = useState(null);
   // liveProgress ticks every second between API polls
   const [liveProgress, setLiveProgress] = useState(0);
-  const tickRef = useRef(null);
   const lastFetchTime = useRef(null);
   const lastProgress = useRef(0);
   const durationRef = useRef(0);
   const isPlaying = useRef(false);
 
-  const startTicker = () => {
-    if (tickRef.current) clearInterval(tickRef.current);
-    tickRef.current = setInterval(() => {
+  useEffect(() => {
+    let cancelled = false;
+    let latestRequest = 0;
+    let hasLoaded = false;
+
+    const ticker = setInterval(() => {
       if (!isPlaying.current) return;
       const elapsed = Date.now() - lastFetchTime.current;
-      const next = Math.min(lastProgress.current + elapsed, durationRef.current);
-      setLiveProgress(next);
+      setLiveProgress(Math.min(lastProgress.current + elapsed, durationRef.current));
     }, 500);
-  };
 
-  useEffect(() => {
     const fetchSong = async () => {
-      const data = await getNowPlaying();
-      setSong(data);
-      if (data) {
-        lastProgress.current = data.progress;
-        lastFetchTime.current = Date.now();
-        durationRef.current = data.duration;
-        isPlaying.current = data.isPlaying;
-        setLiveProgress(data.progress);
-        startTicker();
-      } else {
-        isPlaying.current = false;
+      // Don't poll in background tabs once we have an answer
+      if (hasLoaded && document.hidden) return;
+      const requestId = ++latestRequest;
+      try {
+        const data = await getNowPlaying();
+        // Ignore responses that resolve after unmount or after a newer request
+        if (cancelled || requestId !== latestRequest) return;
+        hasLoaded = true;
+        setSong(data);
+        setStatus(data ? 'playing' : 'idle');
+        isPlaying.current = Boolean(data?.isPlaying);
+        if (data) {
+          lastProgress.current = data.progress;
+          lastFetchTime.current = Date.now();
+          durationRef.current = data.duration;
+          setLiveProgress(data.progress);
+        }
+      } catch (error) {
+        if (cancelled || requestId !== latestRequest) return;
+        console.error('Error fetching Spotify data:', error);
+        // Keep showing the last known state on a transient poll failure
+        if (!hasLoaded) {
+          hasLoaded = true;
+          setStatus('error');
+        }
       }
     };
 
     fetchSong();
-    const interval = setInterval(fetchSong, 10000);
+    const interval = setInterval(fetchSong, POLL_INTERVAL_MS);
     return () => {
+      cancelled = true;
       clearInterval(interval);
-      if (tickRef.current) clearInterval(tickRef.current);
+      clearInterval(ticker);
     };
   }, []);
 
@@ -107,7 +90,25 @@ const NowPlayingSpotify = () => {
   return (
     <div className="flex flex-col items-center max-w-[90vw]">
       <AnimatePresence mode="wait">
-        {song ? (
+        {status === 'loading' ? (
+          <motion.div
+            key="loading"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            role="status"
+            aria-label="Loading Spotify status"
+            className="flex flex-col items-center gap-1.5"
+          >
+            <div className="flex items-center gap-2 px-4 py-2 bg-base-100/50 backdrop-blur-xs border border-neutral rounded-2xl shadow-2xl shadow-primary/20">
+              <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-md md:text-lg animate-pulse" />
+              <div className="flex flex-col gap-1.5 w-[80px] md:w-[100px]">
+                <div className="skeleton h-2 w-full" />
+                <div className="skeleton h-2 w-2/3" />
+              </div>
+            </div>
+          </motion.div>
+        ) : status === 'playing' && song ? (
           <motion.div
             key="playing"
             initial={{ opacity: 0, y: 20 }}
@@ -126,11 +127,15 @@ const NowPlayingSpotify = () => {
               <span className="text-[9px] md:text-[10px] text-white/60">I'm currently listening to:</span>
               <div className="flex items-center gap-3">
                 <div className="relative flex-shrink-0">
-                  <img
-                    src={song.albumArt}
-                    alt="Album Art"
-                    className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-lg"
-                  />
+                  {song.albumArt ? (
+                    <img
+                      src={song.albumArt}
+                      alt={`Album art for ${song.title}`}
+                      className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-lg"
+                    />
+                  ) : (
+                    <div className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-lg bg-neutral" />
+                  )}
                   <div className="absolute -bottom-1 -right-1 bg-base-300 rounded-full w-5 h-5 flex items-center justify-center border border-white/10 shadow-lg">
                     <FontAwesomeIcon icon={faSpotify} className="text-[#1DB954] text-xs" />
                   </div>

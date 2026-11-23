@@ -3,10 +3,12 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+// Skills section temporarily disabled
+// import Skills from './pages/Skills';
 import Alex from './pages/Alex';
 import Particles from './components/Particles';
 import NowPlayingSpotify from './components/Spotify';
+import useSectionScroll from './hooks/useSectionScroll';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 const sectionVariants = {
@@ -35,6 +37,7 @@ function App() {
     damping: 30,
     restDelta: 0.001
   });
+  useSectionScroll();
 
   return (
     <div className="App overflow-x-hidden w-full">
@@ -57,15 +60,8 @@ function App() {
         />
       </div>
 
-      {/* lg+ : fixed top-right corner */}
-      <div className="hidden lg:block fixed top-5 right-5 z-[60] w-fit pointer-events-none">
-        <div className="pointer-events-auto">
-          <NowPlayingSpotify />
-        </div>
-      </div>
-
-      {/* mobile : centered below navbar */}
-      <div className="lg:hidden fixed bottom-5 right-5 z-[60] w-fit pointer-events-none">
+      {/* Single instance so the widget only polls Spotify once: bottom-right on mobile, top-right on lg+ */}
+      <div className="fixed bottom-5 right-5 lg:bottom-auto lg:top-5 z-[60] w-fit pointer-events-none">
         <div className="pointer-events-auto">
           <NowPlayingSpotify />
         </div>
@@ -89,7 +85,7 @@ function App() {
           </motion.div>
         </section>
 
-        {/* <section
+        <section
           id="experience"
           className="min-h-screen flex items-center justify-center snap-start"
         >
@@ -102,7 +98,7 @@ function App() {
           >
             <Experience />
           </motion.div>
-        </section> */}
+        </section>
 
         <section
           id="projects"
@@ -119,7 +115,8 @@ function App() {
           </motion.div>
         </section>
 
-        <section
+        {/* Skills section temporarily disabled */}
+        {/* <section
           id="skills"
           className="min-h-screen flex items-center justify-center snap-start"
         >
@@ -132,7 +129,7 @@ function App() {
           >
             <Skills />
           </motion.div>
-        </section>
+        </section> */}
 
         <section
           id="alex"

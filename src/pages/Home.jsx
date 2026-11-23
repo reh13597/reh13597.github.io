@@ -9,6 +9,9 @@ export default function Home() {
                     <code>Third year CS student @ SFU 🍁</code>
                 </pre>
                 <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
+                    <code>Developer Analyst Co-op @ Powerex ⚡</code>
+                </pre>
+                <pre data-prefix=">" className="text-md md:text-xl lg:text-2xl">
                     <code>
                         <span>
                             I'm passionate about:
@@ -28,11 +31,11 @@ export default function Home() {
                     <code>
                         <span>
                             I go crazy for:
-                            <span className="transition-colors duration-300 hover:text-black text-rotate [--items:6] [--duration:24000ms]">
+                            <span className="transition-colors duration-300 hover:text-black text-rotate [--items:6] [--duration:28000ms]">
                                 <span className="">
+                                    <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">BJJ 🥋</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Skiing ⛷️</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Hiking ⛰️</span>
-                                    <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Getting Big 💪</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Korean Food 🥘</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Action Anime 📺</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">FPS Games 🎮</span>
@@ -45,13 +48,14 @@ export default function Home() {
                     <code>
                         <span>
                             Working on:
-                            <span className="transition-colors duration-300 hover:text-black text-rotate [--items:5] [--duration:25000ms]">
+                            <span className="transition-colors duration-300 hover:text-black text-rotate [--items:5] [--duration:24000ms]">
                                 <span className="">
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Server Nexus 🕸️</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">SubTrak 📊</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">CerebralVision 🧠</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">School Work 📚</span>
                                     <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Coop Applications 😿</span>
+                                    <span className="px-3 rounded-lg bg-neutral hover:bg-primary transition-colors duration-300">Powerex ⚡</span>
                                 </span>
                             </span>
                         </span>

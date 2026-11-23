@@ -42,7 +42,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+}
+
+/* Mouse/trackpad section scrolling is handled in JS (useSectionScroll); touch keeps native snapping */
+@media not ((hover: hover) and (pointer: fine)) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 .particles-container {
